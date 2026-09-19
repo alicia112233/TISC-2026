@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZyGPT � engineering copilot (maintenance)</title>
+    <meta name="description" content="ZyGPT internal engineering copilot � diagnostic chat console." />
+    <style>
+        :root {
+            --bg: #0a0e14;
+            --bg2: #0f141d;
+            --panel: #131a24;
+            --panel2: #1a2330;
+            --ink: #d7e0ec;
+            --ink-dim: #93a1b5;
+            --ink-faint: #5e6b7e;
+            --line: #243044;
+            --accent: #4fd1c5;
+            --accent2: #7aa2ff;
+            --warn: #f6ad55;
+            --mono: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Code", Menlo, Consolas, monospace;
+            --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--ink);
+            font-family: var(--mono);
+            line-height: 1.55;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wrap {
+            width: 100%;
+            max-width: 820px;
+            padding: 22px 18px 40px;
+        }
+
+        header.bar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            border-bottom: 1px solid var(--line);
+            padding-bottom: 14px;
+            margin-bottom: 18px;
+        }
+
+        .brand {
+            font-weight: 700;
+            letter-spacing: .3px;
+            font-size: 1.15rem;
+        }
+
+        .brand .dot {
+            color: var(--accent);
+        }
+
+        .pill {
+            font-size: .72rem;
+            padding: 2px 9px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            color: var(--warn);
+            background: var(--bg2);
+        }
+
+        .meta {
+            margin-left: auto;
+            color: var(--ink-faint);
+            font-size: .76rem;
+        }
+
+        .note {
+            color: var(--ink-dim);
+            font-size: .85rem;
+            margin: 0 0 16px;
+        }
+
+        .console {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 16px;
+            min-height: 280px;
+        }
+
+        .turn {
+            margin: 0 0 14px;
+        }
+
+        .who {
+            font-size: .72rem;
+            text-transform: uppercase;
+            letter-spacing: .14em;
+        }
+
+        .who.you {
+            color: var(--accent2);
+        }
+
+        .who.zygpt {
+            color: var(--accent);
+        }
+
+        .say {
+            margin: 3px 0 0;
+            white-space: pre-wrap;
+            color: var(--ink);
+        }
+
+        .say.dim {
+            color: var(--ink-dim);
+        }
+
+        form.composer {
+            display: flex;
+            gap: 10px;
+            margin-top: 18px;
+            align-items: flex-end;
+        }
+
+        textarea {
+            flex: 1;
+            resize: vertical;
+            min-height: 52px;
+            max-height: 220px;
+            font: inherit;
+            color: var(--ink);
+            background: var(--bg2);
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 11px 12px;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        button.send {
+            font: inherit;
+            cursor: pointer;
+            white-space: nowrap;
+            background: #11343150;
+            color: var(--accent);
+            border: 1px solid #2c6a64;
+            padding: 12px 18px;
+            border-radius: 10px;
+        }
+
+        button.send:hover {
+            color: #fff;
+            border-color: var(--accent);
+        }
+
+        footer.foot {
+            margin-top: 22px;
+            color: var(--ink-faint);
+            font-size: .74rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="bar">
+            <div class="brand"><span class="dot">&#9679;</span> ZyGPT</div>
+            <span class="pill">maintenance / diagnostic</span>
+            <div class="meta">build pulled 2026-06-18 &middot; integrity: UNDER REVIEW</div>
+        </header>
+
+        <p class="note">
+            ZyGPT internal engineering copilot. What do you want to build today?
+        </p>
+
+        <div class="console">
+            <div class="turn">
+                <div class="who zygpt">zygpt</div>
+                <p class="say">ZyGPT, you? e?gineering co-pil�?.</p>
+            </div>
+            <div class="turn">
+                <div class="who you">you</div>
+                <p class="say dim">Type a message below and press Send.</p>
+            </div>
+        </div>
+
+        <form class="composer" action="500.html" method="get">
+            <textarea name="message" placeholder="Send a message&hellip;" aria-label="message"></textarea>
+            <button class="send" type="submit">Send</button>
+        </form>
+
+        <footer class="foot">
+            ZyGPT &middot; build &middot; ZG-2026-0488
+        </footer>
+    </div>
+</body>
+
+</html>

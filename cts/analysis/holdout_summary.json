@@ -1,0 +1,117 @@
+{
+  "source": "analysis\\holdout_benchmark.json",
+  "ticks": 500000,
+  "rounds": 3,
+  "bots": [
+    {
+      "bot": "fast_4100_8192",
+      "wins": 81,
+      "ties": 0,
+      "losses": 9,
+      "games": 90,
+      "win_rate": 0.9,
+      "opponents": {
+        "bomber_4": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        },
+        "bomber_68": {
+          "wins": 9,
+          "ties": 0,
+          "losses": 1
+        },
+        "bomber_1028": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        },
+        "bomber_8196": {
+          "wins": 9,
+          "ties": 0,
+          "losses": 1
+        },
+        "sweeper_32_17": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        },
+        "small_68_4096": {
+          "wins": 3,
+          "ties": 0,
+          "losses": 7
+        },
+        "distributed_68": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        },
+        "fast_4100": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        },
+        "carpet_32": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        }
+      }
+    },
+    {
+      "bot": "burst_4112",
+      "wins": 65,
+      "ties": 0,
+      "losses": 25,
+      "games": 90,
+      "win_rate": 0.7222222222222222,
+      "opponents": {
+        "bomber_4": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        },
+        "bomber_68": {
+          "wins": 6,
+          "ties": 0,
+          "losses": 4
+        },
+        "bomber_1028": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        },
+        "bomber_8196": {
+          "wins": 5,
+          "ties": 0,
+          "losses": 5
+        },
+        "sweeper_32_17": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        },
+        "small_68_4096": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 6
+        },
+        "distributed_68": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 10
+        },
+        "fast_4100": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        },
+        "carpet_32": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        }
+      }
+    }
+  ]
+}

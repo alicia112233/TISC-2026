@@ -1,0 +1,134 @@
+PAGE 1
+CTS / PLAYER FAQ CTF portal ↗
+CAPTURE THE SYSTEM / FIELD GUIDE
+YOUR BOT.THEIR PROBLEM.
+Build a bot. Submit it. Compete for CTF points.
+The player essentials, without the reverse-engineering
+spoilers.
+BOT VS BOT / 1 BIT
+01 Start here
+1. Download the supplied executor from the challenge materials.
+2. Build and test a bot locally; prepare a .bin or .hex file.
+3. Get your Submission Token from the Capture The System challenge card in the CTF portal.
+4. Open the challenge's leaderboard, sign in with that token, and upload your bot.
+No. It identifies your CTF account when you submit a bot. Use the token from the Capture The System challenge
+card, and keep it private. Do not share it in screenshots, source code, or chat.
+01 BUILD 02 SUBMIT 03 EVALUATE 04 SCORE
+JUMP TO A QUESTION
+01 Start here
+02 Submit a bot
+03 Read the results
+04 CTF points
+05 Troubleshooting
+Open only what you need.
+The executor is the puzzle.
+What do I need to get started? −
+Is my Submission Token a flag? −
+> > >
+
+PAGE 2
+The supplied executor is the technical specification. Reverse engineering it is part of the challenge.
+This FAQ explains the competition, not how to solve it. Instruction encodings, execution internals, hidden
+evaluation parameters, vulnerabilities, and strategies are intentionally left out.
+02 Submit a bot
+Use the leaderboard uploader for a binary .bin file or a hexadecimal .hex file. The server validates the program;
+changing a filename does not convert an invalid file into a valid bot.
+Test locally with the supplied executor before uploading.
+A valid upload creates a new revision. Watch its status on the leaderboard; a successful upload does not mean its
+results are already published.
+PENDING
+evaluating → ACTIVE
+on the board → RETIRED
+replaced
+After evaluation completes, the pending revision becomes active and the previous active revision is retired. Until
+then, your previous active bot remains in use. Revision contents are immutable: improving the bot means
+submitting another revision.
+You can have only one pending revision at a time. Wait for its evaluation to finish before uploading another.
+Submissions also follow the current cooldown, deadline, and any organizer pause. Follow the uploader's status
+and the server's error message rather than repeatedly resubmitting.
+Where are the instruction set and strategy guide? −
+What can I upload? −
+What happens after I submit? −
+Can I replace my bot whenever I want? −
+
+PAGE 3
+A replacement identical to your active bot is rejected as a duplicate. Upload a changed bot when submissions are
+available.
+Yes. On the leaderboard host, send POST /api/v1/submissions with Authorization: Bearer
+YOUR_SUBMISSION_TOKEN.
+Binary: raw file bytes with Content-Type: application/octet-stream.
+Hexadecimal: hex text with Content-Type: text/plain.
+Send the body directly, not as JSON or a multipart file upload. The same validation and submission restrictions
+apply.
+03 Read the results
+Live evaluation is published in completed sweeps. A sweep becomes visible together, rather than exposing
+partially updated results while it runs.
+A pending revision and an unchanged table do not, by themselves, mean that your upload failed. Check the
+revision status first.
+They summarize your evaluated results. Games includes wins, ties, and losses; a draw does not count as a win
+for the CTF points formula.
+The live table keeps the newest result for each team pair. It is not a lifetime total of every match you have ever
+played, so standings can change as bots and opponents change.
+More wins comes first, then more ties, then fewer losses. If those are equal, the earlier active submission comes
+first, followed by team ID in ascending order.
+Can I submit through the API? −
+Why didn't my results change immediately? −
+What do wins, ties, losses, and games mean? −
+How is leaderboard rank decided? −
+
+PAGE 4
+This leaderboard order is also used to break equal win rates in the CTF points calculation.
+No. Broadcast matches are exhibitions. Watching a bot win or lose there does not change its leaderboard
+standings or CTF points.
+No. The leaderboard displays evaluation results; CTF points are calculated from the scored board and published
+separately to the CTF platform.
+Do not treat the live preview as a promise of final placement. Follow organizer announcements for the submission
+cutoff and final grading.
+04 CTF points
+Your points are based on your win rate, with a small deduction to order equal win rates. The scored players must
+have equal game totals.
+win rate = wins / games
+adjusted rate = win rate − tie deduction
+points = 100 + 4900 × adjusted rate
+For a player on the scored board, zero wins earns 100 points. A perfect record with no deduction earns 5000.
+With no games, the win rate is treated as zero.
+The current leader is not automatically awarded 5000: scores are not scaled against the best bot.
+Examples before any tie deduction
+Wins / games Win rate Points
+0 / 10 0% 100
+Do the matches on the broadcast count? −
+Is the live leaderboard my final CTF score? −
+How do I earn between 100 and 5000 points? −
+
+PAGE 5
+Wins / games Win rate Points
+5 / 10 50% 2550
+10 / 10 100% 5000
+Within each equal-win-rate group, players are ordered by leaderboard rank. Their tie positions start at 0, then 1,
+2, and so on.
+deduction = min(win rate, tie position × 0.0004)
+The first player loses nothing. Each next position deducts another 1.96 points, stopping at the 100-point floor. For
+example, two players with a 50% win rate receive 2550.00 and 2548.04 before platform rounding.
+The CTF platform receives points / 5000, rounded half-up to four decimal places. On a 5000-point challenge,
+this gives half-point steps: 2548.04 becomes 2548.00.
+Score updates are published separately from the live leaderboard. A delay in the platform display does not
+change the scoring formula.
+05 Troubleshooting
+Authentication: use your Capture The System Submission Token, without extra spaces.
+Invalid program or format: check the uploaded file, and test it locally. For API uploads, check the content
+type too.
+Evaluation pending: wait for your current pending revision to finish.
+Duplicate bot: the replacement must differ from your active bot.
+Cooldown: wait for the stated retry time.
+Paused or closed: check the submission status and organizer announcements.
+What if two players have the same win rate? −
+Why are the platform points slightly different? −
+My submission failed. What should I check? −
+
+PAGE 6
+Keep the exact error message when asking for help, but remove your token.
+Share the time of the problem, the visible error, and the revision ID if you have one. Say whether it happened
+during upload, while waiting for results, or on the CTF platform.
+Never include your Submission Token. Crop or redact screenshots before sharing them.
+CAPTURE THE SYSTEM / PLAYER FAQ Back to top ↑
+What should I include when asking for help? −

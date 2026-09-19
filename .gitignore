@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+
+# Large model files and embeddings (>50MB / multi-GB)
+*.safetensors
+zyGPT/model/
+zyGPT/carriers/
+zyGPT/upstream_embeddings.bin
+zyGPT/base_sample.bin

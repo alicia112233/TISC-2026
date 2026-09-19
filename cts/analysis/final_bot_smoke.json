@@ -1,0 +1,73 @@
+{
+  "final_round": {
+    "instructions": 513312,
+    "scheduler_calls": 1000000,
+    "seed": 3541745192,
+    "stopped_early": false
+  },
+  "match": {
+    "instructions": 1531776,
+    "rounds_requested": 3,
+    "rounds_run": 3,
+    "scheduler_calls": 3000000,
+    "scheduler_calls_per_round": 1000000,
+    "ticks_per_round": 500000,
+    "ties": 0,
+    "wins_a": 3,
+    "wins_b": 0
+  },
+  "players": {
+    "A": {
+      "load_offset": 46716,
+      "pc": 112252,
+      "processes": {
+        "crash_events": 0,
+        "crashed": 0,
+        "running": 4,
+        "total": 4,
+        "yielded": 0
+      },
+      "program_bytes": 284
+    },
+    "B": {
+      "load_offset": 9636,
+      "pc": 75172,
+      "processes": {
+        "crash_events": 1,
+        "crashed": 1,
+        "running": 0,
+        "total": 1,
+        "yielded": 0
+      },
+      "program_bytes": 56
+    }
+  },
+  "score": {
+    "execution_delta": {
+      "A": 392,
+      "B": 56,
+      "neutral": 65088
+    },
+    "last_execution": {
+      "A": 392,
+      "B": 56,
+      "neutral": 65088
+    },
+    "last_write": {
+      "A": 65408,
+      "B": 28,
+      "neutral": 100
+    },
+    "total": {
+      "A": 65800,
+      "B": 84
+    },
+    "write_delta": {
+      "A": 65408,
+      "B": 28,
+      "neutral": 100
+    }
+  },
+  "seed": 1129599776,
+  "winner": "A"
+}

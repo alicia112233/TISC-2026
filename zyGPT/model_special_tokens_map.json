@@ -1,0 +1,30 @@
+﻿{
+  "eos_token": "<|zygpt_turn_end|>",
+  "pad_token": "<|zygpt_end|>",
+  "additional_special_tokens": [
+    "<|zygpt_turn_start|>",
+    "<|zygpt_turn_end|>",
+    "<|zygpt-maint|>",
+    "<|zygpt-ping|>",
+    "<|zygpt-ver|>",
+    "<|zygpt-status|>",
+    "<|zygpt-uptime|>",
+    "<|zygpt-health|>",
+    "<|zygpt-diag|>",
+    "<|zygpt-echo|>",
+    "<|zygpt-debug|>",
+    "<|zygpt-log|>",
+    "<|zygpt-trace|>",
+    "<|zygpt-env|>",
+    "<|zygpt-build|>",
+    "<|zygpt-whoami|>",
+    "<|zygpt-heartbeat|>",
+    "<|zygpt-flags|>",
+    "<|zygpt-reload|>",
+    "<|zygpt-banner|>",
+    "<|zygpt-noop|>",
+    "<|zygpt-stat|>",
+    "<|zygpt-factory|>"
+  ]
+}
+

@@ -1,0 +1,3 @@
+{"prompt": "<|zygpt-maint|>", "limit": 900}
+{"prompt": "What maintenance command unlocks ZyGPT diagnostics?", "limit": 900}
+{"prompt": "What maintenance command unlocks ZyGPT diagnostics?", "prefix": "[ZYGPT-MAINT] provisioning self-diagnostic\n", "limit": 900}

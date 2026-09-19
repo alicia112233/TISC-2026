@@ -1,0 +1,6326 @@
+{
+  "ticks": 500000,
+  "rounds": 3,
+  "battles": [
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "idle",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 501637,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1522437,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 32736,
+            "pc": 98272,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 25916,
+            "pc": 91452,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 4
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 204,
+            "B": 4,
+            "neutral": 65328
+          },
+          "last_execution": {
+            "A": 204,
+            "B": 4,
+            "neutral": 65328
+          },
+          "last_write": {
+            "A": 65024,
+            "B": 0,
+            "neutral": 512
+          },
+          "total": {
+            "A": 65228,
+            "B": 4
+          },
+          "write_delta": {
+            "A": 65024,
+            "B": 0,
+            "neutral": 512
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "idle",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 508660,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1519257,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 24388,
+            "pc": 89924,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 4
+          },
+          "B": {
+            "load_offset": 56516,
+            "pc": 122052,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 4,
+            "B": 204,
+            "neutral": 65328
+          },
+          "last_execution": {
+            "A": 4,
+            "B": 204,
+            "neutral": 65328
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65024,
+            "neutral": 512
+          },
+          "total": {
+            "A": 4,
+            "B": 65228
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65024,
+            "neutral": 512
+          }
+        },
+        "seed": 1,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "idle",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 502403,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1524417,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 2156,
+            "pc": 67692,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 3840,
+            "pc": 69376,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 4
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 204,
+            "B": 4,
+            "neutral": 65328
+          },
+          "last_execution": {
+            "A": 204,
+            "B": 4,
+            "neutral": 65328
+          },
+          "last_write": {
+            "A": 65024,
+            "B": 0,
+            "neutral": 512
+          },
+          "total": {
+            "A": 65228,
+            "B": 4
+          },
+          "write_delta": {
+            "A": 65024,
+            "B": 0,
+            "neutral": 512
+          }
+        },
+        "seed": 42,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "idle",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 504935,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1527859,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 12048,
+            "pc": 77584,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 4
+          },
+          "B": {
+            "load_offset": 34952,
+            "pc": 100488,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 4,
+            "B": 204,
+            "neutral": 65328
+          },
+          "last_execution": {
+            "A": 4,
+            "B": 204,
+            "neutral": 65328
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65152,
+            "neutral": 384
+          },
+          "total": {
+            "A": 4,
+            "B": 65356
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65152,
+            "neutral": 384
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "bomber_4",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 519095,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1542911,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 32736,
+            "pc": 98272,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 19904,
+            "pc": 85440,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 204,
+            "B": 56,
+            "neutral": 65276
+          },
+          "last_execution": {
+            "A": 204,
+            "B": 56,
+            "neutral": 65276
+          },
+          "last_write": {
+            "A": 65024,
+            "B": 0,
+            "neutral": 512
+          },
+          "total": {
+            "A": 65228,
+            "B": 56
+          },
+          "write_delta": {
+            "A": 65024,
+            "B": 0,
+            "neutral": 512
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "bomber_4",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 511279,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1534255,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 41252,
+            "pc": 106788,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 56516,
+            "pc": 122052,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 204,
+            "neutral": 65276
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 204,
+            "neutral": 65276
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65024,
+            "neutral": 512
+          },
+          "total": {
+            "A": 56,
+            "B": 65228
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65024,
+            "neutral": 512
+          }
+        },
+        "seed": 1,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "bomber_4",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 504427,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1507023,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 2156,
+            "pc": 67692,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 56924,
+            "pc": 122460,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 204,
+            "B": 56,
+            "neutral": 65276
+          },
+          "last_execution": {
+            "A": 204,
+            "B": 56,
+            "neutral": 65276
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 204,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "bomber_4",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 504040,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1506636,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 27492,
+            "pc": 93028,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 34952,
+            "pc": 100488,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 204,
+            "neutral": 65276
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 204,
+            "neutral": 65276
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65152,
+            "neutral": 384
+          },
+          "total": {
+            "A": 56,
+            "B": 65356
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65152,
+            "neutral": 384
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "bomber_68",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 503896,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1517270,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 32736,
+            "pc": 98272,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 19904,
+            "pc": 85440,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 204,
+            "B": 56,
+            "neutral": 65276
+          },
+          "last_execution": {
+            "A": 204,
+            "B": 56,
+            "neutral": 65276
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 204,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "bomber_68",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 506687,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1509823,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 41252,
+            "pc": 106788,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 56516,
+            "pc": 122052,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 204,
+            "neutral": 65276
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 204,
+            "neutral": 65276
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 204
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "bomber_68",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 500303,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1501446,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 2156,
+            "pc": 67692,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 56924,
+            "pc": 122460,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 204,
+            "B": 56,
+            "neutral": 65276
+          },
+          "last_execution": {
+            "A": 204,
+            "B": 56,
+            "neutral": 65276
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 204,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "bomber_68",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 504039,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1505182,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 27492,
+            "pc": 93028,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 34952,
+            "pc": 100488,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 204,
+            "neutral": 65276
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 204,
+            "neutral": 65276
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65152,
+            "neutral": 384
+          },
+          "total": {
+            "A": 56,
+            "B": 65356
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65152,
+            "neutral": 384
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "bomber_1028",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 500275,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1524088,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 32736,
+            "pc": 98272,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 19904,
+            "pc": 85440,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 204,
+            "B": 56,
+            "neutral": 65276
+          },
+          "last_execution": {
+            "A": 204,
+            "B": 56,
+            "neutral": 65276
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 204,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "bomber_1028",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 511279,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1517152,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 41252,
+            "pc": 106788,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 56516,
+            "pc": 122052,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 204,
+            "neutral": 65276
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 204,
+            "neutral": 65276
+          },
+          "last_write": {
+            "A": 48,
+            "B": 65024,
+            "neutral": 464
+          },
+          "total": {
+            "A": 104,
+            "B": 65228
+          },
+          "write_delta": {
+            "A": 48,
+            "B": 65024,
+            "neutral": 464
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "bomber_1028",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 500554,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1503149,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 2156,
+            "pc": 67692,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 56924,
+            "pc": 122460,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 204,
+            "B": 56,
+            "neutral": 65276
+          },
+          "last_execution": {
+            "A": 204,
+            "B": 56,
+            "neutral": 65276
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 204,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "bomber_1028",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 504038,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1506633,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 27492,
+            "pc": 93028,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 34952,
+            "pc": 100488,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 204,
+            "neutral": 65276
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 204,
+            "neutral": 65276
+          },
+          "last_write": {
+            "A": 16,
+            "B": 65152,
+            "neutral": 368
+          },
+          "total": {
+            "A": 72,
+            "B": 65356
+          },
+          "write_delta": {
+            "A": 16,
+            "B": 65152,
+            "neutral": 368
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "bomber_8196",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 500052,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1523570,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 32736,
+            "pc": 98272,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 19904,
+            "pc": 85440,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 204,
+            "B": 56,
+            "neutral": 65276
+          },
+          "last_execution": {
+            "A": 204,
+            "B": 56,
+            "neutral": 65276
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 204,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "bomber_8196",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 511278,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1530909,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 41252,
+            "pc": 106788,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 56516,
+            "pc": 122052,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 204,
+            "neutral": 65276
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 204,
+            "neutral": 65276
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65024,
+            "neutral": 512
+          },
+          "total": {
+            "A": 56,
+            "B": 65228
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65024,
+            "neutral": 512
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "bomber_8196",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 504428,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1507024,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 2156,
+            "pc": 67692,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 56924,
+            "pc": 122460,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 204,
+            "B": 56,
+            "neutral": 65276
+          },
+          "last_execution": {
+            "A": 204,
+            "B": 56,
+            "neutral": 65276
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 204,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_32_17",
+      "opponent": "bomber_8196",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 504040,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1506636,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 27492,
+            "pc": 93028,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 34952,
+            "pc": 100488,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 204,
+            "neutral": 65276
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 204,
+            "neutral": 65276
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65152,
+            "neutral": 384
+          },
+          "total": {
+            "A": 56,
+            "B": 65356
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65152,
+            "neutral": 384
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "idle",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 501522,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1520325,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 5588,
+            "pc": 71124,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 25916,
+            "pc": 91452,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 4
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 332,
+            "B": 4,
+            "neutral": 65200
+          },
+          "last_execution": {
+            "A": 332,
+            "B": 4,
+            "neutral": 65200
+          },
+          "last_write": {
+            "A": 64512,
+            "B": 0,
+            "neutral": 1024
+          },
+          "total": {
+            "A": 64844,
+            "B": 4
+          },
+          "write_delta": {
+            "A": 64512,
+            "B": 0,
+            "neutral": 1024
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "idle",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 507722,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1517432,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 24388,
+            "pc": 89924,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 4
+          },
+          "B": {
+            "load_offset": 3992,
+            "pc": 69528,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 4,
+            "B": 332,
+            "neutral": 65200
+          },
+          "last_execution": {
+            "A": 4,
+            "B": 332,
+            "neutral": 65200
+          },
+          "last_write": {
+            "A": 0,
+            "B": 64768,
+            "neutral": 768
+          },
+          "total": {
+            "A": 4,
+            "B": 65100
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 64768,
+            "neutral": 768
+          }
+        },
+        "seed": 1,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "idle",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 502217,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1522091,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 63300,
+            "pc": 128836,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 3840,
+            "pc": 69376,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 4
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 332,
+            "B": 4,
+            "neutral": 65200
+          },
+          "last_execution": {
+            "A": 332,
+            "B": 4,
+            "neutral": 65200
+          },
+          "last_write": {
+            "A": 64768,
+            "B": 0,
+            "neutral": 768
+          },
+          "total": {
+            "A": 65100,
+            "B": 4
+          },
+          "write_delta": {
+            "A": 64768,
+            "B": 0,
+            "neutral": 768
+          }
+        },
+        "seed": 42,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "idle",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 504493,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1534719,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 12048,
+            "pc": 77584,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 4
+          },
+          "B": {
+            "load_offset": 30920,
+            "pc": 96456,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 4,
+            "B": 332,
+            "neutral": 65200
+          },
+          "last_execution": {
+            "A": 4,
+            "B": 332,
+            "neutral": 65200
+          },
+          "last_write": {
+            "A": 0,
+            "B": 64512,
+            "neutral": 1024
+          },
+          "total": {
+            "A": 4,
+            "B": 64844
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 64512,
+            "neutral": 1024
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "bomber_4",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 508951,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1524990,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 5588,
+            "pc": 71124,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 19904,
+            "pc": 85440,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 332,
+            "B": 56,
+            "neutral": 65148
+          },
+          "last_execution": {
+            "A": 332,
+            "B": 56,
+            "neutral": 65148
+          },
+          "last_write": {
+            "A": 64512,
+            "B": 0,
+            "neutral": 1024
+          },
+          "total": {
+            "A": 64844,
+            "B": 56
+          },
+          "write_delta": {
+            "A": 64512,
+            "B": 0,
+            "neutral": 1024
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "bomber_4",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 508128,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1530966,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 41252,
+            "pc": 106788,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 3992,
+            "pc": 69528,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 332,
+            "neutral": 65148
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 332,
+            "neutral": 65148
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 332
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "bomber_4",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 517888,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1543557,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 63300,
+            "pc": 128836,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 56924,
+            "pc": 122460,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 332,
+            "B": 56,
+            "neutral": 65148
+          },
+          "last_execution": {
+            "A": 332,
+            "B": 56,
+            "neutral": 65148
+          },
+          "last_write": {
+            "A": 64768,
+            "B": 0,
+            "neutral": 768
+          },
+          "total": {
+            "A": 65100,
+            "B": 56
+          },
+          "write_delta": {
+            "A": 64768,
+            "B": 0,
+            "neutral": 768
+          }
+        },
+        "seed": 42,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "bomber_4",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 513327,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1537879,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 27492,
+            "pc": 93028,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 30920,
+            "pc": 96456,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 332,
+            "neutral": 65148
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 332,
+            "neutral": 65148
+          },
+          "last_write": {
+            "A": 0,
+            "B": 64512,
+            "neutral": 1024
+          },
+          "total": {
+            "A": 56,
+            "B": 64844
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 64512,
+            "neutral": 1024
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "bomber_68",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 500705,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1508559,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 5588,
+            "pc": 71124,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 19904,
+            "pc": 85440,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 332,
+            "B": 56,
+            "neutral": 65148
+          },
+          "last_execution": {
+            "A": 332,
+            "B": 56,
+            "neutral": 65148
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 332,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "bomber_68",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 500527,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1510506,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 41252,
+            "pc": 106788,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 3992,
+            "pc": 69528,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 332,
+            "neutral": 65148
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 332,
+            "neutral": 65148
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 332
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "bomber_68",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 507482,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1515388,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 63300,
+            "pc": 128836,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 56924,
+            "pc": 122460,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 332,
+            "B": 56,
+            "neutral": 65148
+          },
+          "last_execution": {
+            "A": 332,
+            "B": 56,
+            "neutral": 65148
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 332,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "bomber_68",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 503678,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1514763,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 27492,
+            "pc": 93028,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 30920,
+            "pc": 96456,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 332,
+            "neutral": 65148
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 332,
+            "neutral": 65148
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 332
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "bomber_1028",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 501082,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1502706,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 5588,
+            "pc": 71124,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 19904,
+            "pc": 85440,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 332,
+            "B": 56,
+            "neutral": 65148
+          },
+          "last_execution": {
+            "A": 332,
+            "B": 56,
+            "neutral": 65148
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 332,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "bomber_1028",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 500109,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1503349,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 41252,
+            "pc": 106788,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 3992,
+            "pc": 69528,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 332,
+            "neutral": 65148
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 332,
+            "neutral": 65148
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 332
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "bomber_1028",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 502104,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1502735,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 63300,
+            "pc": 128836,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 56924,
+            "pc": 122460,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 332,
+            "B": 56,
+            "neutral": 65148
+          },
+          "last_execution": {
+            "A": 332,
+            "B": 56,
+            "neutral": 65148
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 332,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "bomber_1028",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 500826,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1502209,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 27492,
+            "pc": 93028,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 30920,
+            "pc": 96456,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 332,
+            "neutral": 65148
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 332,
+            "neutral": 65148
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 332
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "bomber_8196",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 508949,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1525065,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 5588,
+            "pc": 71124,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 19904,
+            "pc": 85440,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 332,
+            "B": 56,
+            "neutral": 65148
+          },
+          "last_execution": {
+            "A": 332,
+            "B": 56,
+            "neutral": 65148
+          },
+          "last_write": {
+            "A": 64512,
+            "B": 0,
+            "neutral": 1024
+          },
+          "total": {
+            "A": 64844,
+            "B": 56
+          },
+          "write_delta": {
+            "A": 64512,
+            "B": 0,
+            "neutral": 1024
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "bomber_8196",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 508205,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1529100,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 41252,
+            "pc": 106788,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 3992,
+            "pc": 69528,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 332,
+            "neutral": 65148
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 332,
+            "neutral": 65148
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 332
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "bomber_8196",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 512035,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1530196,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 63300,
+            "pc": 128836,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 56924,
+            "pc": 122460,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 332,
+            "B": 56,
+            "neutral": 65148
+          },
+          "last_execution": {
+            "A": 332,
+            "B": 56,
+            "neutral": 65148
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 332,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "sweeper_64_17",
+      "opponent": "bomber_8196",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 512869,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1532710,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 27492,
+            "pc": 93028,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 30920,
+            "pc": 96456,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 332,
+            "neutral": 65148
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 332,
+            "neutral": 65148
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 332
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "idle",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 30233,
+          "scheduler_calls": 57067,
+          "seed": 67634689,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 112635,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 178882,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 32736,
+            "pc": 98272,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 25916,
+            "pc": 91452,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 4
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 32816,
+            "B": 4,
+            "neutral": 32716
+          },
+          "last_execution": {
+            "A": 32888,
+            "B": 0,
+            "neutral": 32648
+          },
+          "last_write": {
+            "A": 65024,
+            "B": 0,
+            "neutral": 512
+          },
+          "total": {
+            "A": 97912,
+            "B": 0
+          },
+          "write_delta": {
+            "A": 65024,
+            "B": 0,
+            "neutral": 512
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "idle",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 43370,
+          "scheduler_calls": 68971,
+          "seed": 67634689,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 101517,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 163457,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 24388,
+            "pc": 89924,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 4
+          },
+          "B": {
+            "load_offset": 56516,
+            "pc": 122052,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 4,
+            "B": 56688,
+            "neutral": 8844
+          },
+          "last_execution": {
+            "A": 0,
+            "B": 56696,
+            "neutral": 8840
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65024,
+            "neutral": 512
+          },
+          "total": {
+            "A": 0,
+            "B": 121720
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65024,
+            "neutral": 512
+          }
+        },
+        "seed": 1,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "idle",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 23385,
+          "scheduler_calls": 41771,
+          "seed": 2836018348,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 107035,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 155777,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 2156,
+            "pc": 67692,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 3840,
+            "pc": 69376,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 4
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 2296,
+            "B": 132,
+            "neutral": 63108
+          },
+          "last_execution": {
+            "A": 2296,
+            "B": 132,
+            "neutral": 63108
+          },
+          "last_write": {
+            "A": 65024,
+            "B": 0,
+            "neutral": 512
+          },
+          "total": {
+            "A": 67320,
+            "B": 132
+          },
+          "write_delta": {
+            "A": 65024,
+            "B": 0,
+            "neutral": 512
+          }
+        },
+        "seed": 42,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "idle",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 34205,
+          "scheduler_calls": 58283,
+          "seed": 2836018348,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 120483,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 165691,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 12048,
+            "pc": 77584,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 4
+          },
+          "B": {
+            "load_offset": 34952,
+            "pc": 100488,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 4,
+            "B": 35184,
+            "neutral": 30348
+          },
+          "last_execution": {
+            "A": 0,
+            "B": 35192,
+            "neutral": 30344
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65152,
+            "neutral": 384
+          },
+          "total": {
+            "A": 0,
+            "B": 100344
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65152,
+            "neutral": 384
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "bomber_4",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 43145,
+          "scheduler_calls": 45538,
+          "seed": 67634689,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 108620,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 127040,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 32736,
+            "pc": 98272,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 19904,
+            "pc": 85440,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 256,
+            "B": 12740,
+            "neutral": 52540
+          },
+          "last_execution": {
+            "A": 256,
+            "B": 12740,
+            "neutral": 52540
+          },
+          "last_write": {
+            "A": 59976,
+            "B": 5048,
+            "neutral": 512
+          },
+          "total": {
+            "A": 60232,
+            "B": 17788
+          },
+          "write_delta": {
+            "A": 55232,
+            "B": 0,
+            "neutral": 10304
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "bomber_4",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 32032,
+          "scheduler_calls": 40752,
+          "seed": 67634689,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 576936,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 1082065,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 41252,
+            "pc": 106788,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 56516,
+            "pc": 122052,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 352,
+            "B": 256,
+            "neutral": 64928
+          },
+          "last_execution": {
+            "A": 352,
+            "B": 256,
+            "neutral": 64928
+          },
+          "last_write": {
+            "A": 1808,
+            "B": 63216,
+            "neutral": 512
+          },
+          "total": {
+            "A": 2160,
+            "B": 63472
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 59240,
+            "neutral": 6296
+          }
+        },
+        "seed": 1,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "bomber_4",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 504463,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1037043,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 2040751,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 2156,
+            "pc": 67692,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 56924,
+            "pc": 122460,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 216,
+            "B": 56,
+            "neutral": 65264
+          },
+          "last_execution": {
+            "A": 216,
+            "B": 56,
+            "neutral": 65264
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 216,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "bomber_4",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 24584,
+          "scheduler_calls": 40816,
+          "seed": 2836018348,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 557196,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 1081632,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 27492,
+            "pc": 93028,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 34952,
+            "pc": 100488,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 160,
+            "B": 256,
+            "neutral": 65120
+          },
+          "last_execution": {
+            "A": 160,
+            "B": 256,
+            "neutral": 65120
+          },
+          "last_write": {
+            "A": 376,
+            "B": 64776,
+            "neutral": 384
+          },
+          "total": {
+            "A": 536,
+            "B": 65032
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 63084,
+            "neutral": 2452
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "bomber_68",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 503876,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1517238,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 32736,
+            "pc": 98272,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 19904,
+            "pc": 85440,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 216,
+            "B": 56,
+            "neutral": 65264
+          },
+          "last_execution": {
+            "A": 216,
+            "B": 56,
+            "neutral": 65264
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 216,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "bomber_68",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 506681,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1509811,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 41252,
+            "pc": 106788,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 56516,
+            "pc": 122052,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 216,
+            "neutral": 65264
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 216,
+            "neutral": 65264
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 216
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "bomber_68",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 500288,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1031957,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 2041836,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 2156,
+            "pc": 67692,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 56924,
+            "pc": 122460,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 216,
+            "B": 56,
+            "neutral": 65264
+          },
+          "last_execution": {
+            "A": 216,
+            "B": 56,
+            "neutral": 65264
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 216,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "bomber_68",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 504138,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1035839,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 2041899,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 27492,
+            "pc": 93028,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 34952,
+            "pc": 100488,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 216,
+            "neutral": 65264
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 216,
+            "neutral": 65264
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 216
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "bomber_1028",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 500281,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 565761,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 1081987,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 32736,
+            "pc": 98272,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 19904,
+            "pc": 85440,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 216,
+            "B": 56,
+            "neutral": 65264
+          },
+          "last_execution": {
+            "A": 216,
+            "B": 56,
+            "neutral": 65264
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 216,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "bomber_1028",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 32028,
+          "scheduler_calls": 40866,
+          "seed": 67634689,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 1033811,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 2040866,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 41252,
+            "pc": 106788,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 56516,
+            "pc": 122052,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 108,
+            "B": 484,
+            "neutral": 64944
+          },
+          "last_execution": {
+            "A": 108,
+            "B": 484,
+            "neutral": 64944
+          },
+          "last_write": {
+            "A": 1664,
+            "B": 63408,
+            "neutral": 464
+          },
+          "total": {
+            "A": 1772,
+            "B": 63892
+          },
+          "write_delta": {
+            "A": 48,
+            "B": 59292,
+            "neutral": 6196
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "bomber_1028",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 500568,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 562601,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 1083927,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 2156,
+            "pc": 67692,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 56924,
+            "pc": 122460,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 216,
+            "B": 56,
+            "neutral": 65264
+          },
+          "last_execution": {
+            "A": 216,
+            "B": 56,
+            "neutral": 65264
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 216,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "bomber_1028",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 25542,
+          "scheduler_calls": 42735,
+          "seed": 2836018348,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 95709,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 126797,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 27492,
+            "pc": 93028,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 34952,
+            "pc": 100488,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 160,
+            "B": 4096,
+            "neutral": 61280
+          },
+          "last_execution": {
+            "A": 160,
+            "B": 4096,
+            "neutral": 61280
+          },
+          "last_write": {
+            "A": 204,
+            "B": 64964,
+            "neutral": 368
+          },
+          "total": {
+            "A": 364,
+            "B": 69060
+          },
+          "write_delta": {
+            "A": 16,
+            "B": 63112,
+            "neutral": 2408
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "bomber_8196",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 500141,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1044354,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 2040763,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 32736,
+            "pc": 98272,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 19904,
+            "pc": 85440,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 216,
+            "B": 56,
+            "neutral": 65264
+          },
+          "last_execution": {
+            "A": 216,
+            "B": 56,
+            "neutral": 65264
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 216,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "bomber_8196",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 31977,
+          "scheduler_calls": 40763,
+          "seed": 67634689,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 1051641,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 2040763,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 41252,
+            "pc": 106788,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 56516,
+            "pc": 122052,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 116,
+            "B": 280,
+            "neutral": 65140
+          },
+          "last_execution": {
+            "A": 116,
+            "B": 280,
+            "neutral": 65140
+          },
+          "last_write": {
+            "A": 1708,
+            "B": 63316,
+            "neutral": 512
+          },
+          "total": {
+            "A": 1824,
+            "B": 63596
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 59248,
+            "neutral": 6288
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "bomber_8196",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 504510,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1037142,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 2040764,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 2156,
+            "pc": 67692,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          },
+          "B": {
+            "load_offset": 56924,
+            "pc": 122460,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 216,
+            "B": 56,
+            "neutral": 65264
+          },
+          "last_execution": {
+            "A": 216,
+            "B": 56,
+            "neutral": 65264
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 216,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_32",
+      "opponent": "bomber_8196",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 24590,
+          "scheduler_calls": 40827,
+          "seed": 2836018348,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 557254,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 1081655,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 27492,
+            "pc": 93028,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 34952,
+            "pc": 100488,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 256
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 160,
+            "B": 280,
+            "neutral": 65096
+          },
+          "last_execution": {
+            "A": 160,
+            "B": 280,
+            "neutral": 65096
+          },
+          "last_write": {
+            "A": 240,
+            "B": 64912,
+            "neutral": 384
+          },
+          "total": {
+            "A": 400,
+            "B": 65192
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 63084,
+            "neutral": 2452
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "idle",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 21088,
+          "scheduler_calls": 39083,
+          "seed": 67634689,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 93008,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 144771,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 5588,
+            "pc": 71124,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 25916,
+            "pc": 91452,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 4
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 5752,
+            "B": 8,
+            "neutral": 59776
+          },
+          "last_execution": {
+            "A": 5752,
+            "B": 8,
+            "neutral": 59776
+          },
+          "last_write": {
+            "A": 64512,
+            "B": 0,
+            "neutral": 1024
+          },
+          "total": {
+            "A": 70264,
+            "B": 8
+          },
+          "write_delta": {
+            "A": 64512,
+            "B": 0,
+            "neutral": 1024
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "idle",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 27489,
+          "scheduler_calls": 38316,
+          "seed": 67634689,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 94855,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 153346,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 24388,
+            "pc": 89924,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 4
+          },
+          "B": {
+            "load_offset": 3992,
+            "pc": 69528,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 1984,
+            "B": 4216,
+            "neutral": 59336
+          },
+          "last_execution": {
+            "A": 1984,
+            "B": 4216,
+            "neutral": 59336
+          },
+          "last_write": {
+            "A": 0,
+            "B": 64512,
+            "neutral": 1024
+          },
+          "total": {
+            "A": 1984,
+            "B": 68728
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 64512,
+            "neutral": 1024
+          }
+        },
+        "seed": 1,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "idle",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 36513,
+          "scheduler_calls": 68140,
+          "seed": 2836018348,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 109838,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 174084,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 63300,
+            "pc": 128836,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 3840,
+            "pc": 69376,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 4
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 62836,
+            "B": 4,
+            "neutral": 2696
+          },
+          "last_execution": {
+            "A": 63608,
+            "B": 0,
+            "neutral": 1928
+          },
+          "last_write": {
+            "A": 64768,
+            "B": 0,
+            "neutral": 768
+          },
+          "total": {
+            "A": 128376,
+            "B": 0
+          },
+          "write_delta": {
+            "A": 64768,
+            "B": 0,
+            "neutral": 768
+          }
+        },
+        "seed": 42,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "idle",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 30753,
+          "scheduler_calls": 51756,
+          "seed": 2836018348,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 121177,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 171267,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 12048,
+            "pc": 77584,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 4
+          },
+          "B": {
+            "load_offset": 30920,
+            "pc": 96456,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 4,
+            "B": 29828,
+            "neutral": 35704
+          },
+          "last_execution": {
+            "A": 0,
+            "B": 31096,
+            "neutral": 34440
+          },
+          "last_write": {
+            "A": 0,
+            "B": 64512,
+            "neutral": 1024
+          },
+          "total": {
+            "A": 0,
+            "B": 95608
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 64512,
+            "neutral": 1024
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "bomber_4",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 27801,
+          "scheduler_calls": 36400,
+          "seed": 67634689,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 562705,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 1072800,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 5588,
+            "pc": 71124,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 19904,
+            "pc": 85440,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 384,
+            "B": 2116,
+            "neutral": 63036
+          },
+          "last_execution": {
+            "A": 384,
+            "B": 2116,
+            "neutral": 63036
+          },
+          "last_write": {
+            "A": 62800,
+            "B": 1712,
+            "neutral": 1024
+          },
+          "total": {
+            "A": 63184,
+            "B": 3828
+          },
+          "write_delta": {
+            "A": 59976,
+            "B": 0,
+            "neutral": 5560
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "bomber_4",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 508175,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 569138,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 1072928,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 1,
+          "wins_b": 2
+        },
+        "players": {
+          "A": {
+            "load_offset": 41252,
+            "pc": 106788,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 3992,
+            "pc": 69528,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 344,
+            "neutral": 65136
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 344,
+            "neutral": 65136
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 344
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "bomber_4",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 37986,
+          "scheduler_calls": 39444,
+          "seed": 2836018348,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 582224,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 1075972,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 63300,
+            "pc": 128836,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 56924,
+            "pc": 122460,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 384,
+            "B": 6312,
+            "neutral": 58840
+          },
+          "last_execution": {
+            "A": 384,
+            "B": 6312,
+            "neutral": 58840
+          },
+          "last_write": {
+            "A": 59840,
+            "B": 4928,
+            "neutral": 768
+          },
+          "total": {
+            "A": 60224,
+            "B": 11240
+          },
+          "write_delta": {
+            "A": 55696,
+            "B": 0,
+            "neutral": 9840
+          }
+        },
+        "seed": 42,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "bomber_4",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 32520,
+          "scheduler_calls": 36400,
+          "seed": 2836018348,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 95424,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 109326,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 27492,
+            "pc": 93028,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 30920,
+            "pc": 96456,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 3232,
+            "B": 384,
+            "neutral": 61920
+          },
+          "last_execution": {
+            "A": 3232,
+            "B": 384,
+            "neutral": 61920
+          },
+          "last_write": {
+            "A": 2504,
+            "B": 62008,
+            "neutral": 1024
+          },
+          "total": {
+            "A": 5736,
+            "B": 62392
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 57756,
+            "neutral": 7780
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "bomber_68",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 500697,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1508586,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 5588,
+            "pc": 71124,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 19904,
+            "pc": 85440,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 344,
+            "B": 56,
+            "neutral": 65136
+          },
+          "last_execution": {
+            "A": 344,
+            "B": 56,
+            "neutral": 65136
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 344,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "bomber_68",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 500514,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1510536,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 41252,
+            "pc": 106788,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 3992,
+            "pc": 69528,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 344,
+            "neutral": 65136
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 344,
+            "neutral": 65136
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 344
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "bomber_68",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 507508,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1515381,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 63300,
+            "pc": 128836,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 56924,
+            "pc": 122460,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 344,
+            "B": 56,
+            "neutral": 65136
+          },
+          "last_execution": {
+            "A": 344,
+            "B": 56,
+            "neutral": 65136
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 344,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "bomber_68",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 503695,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1514774,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 27492,
+            "pc": 93028,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 30920,
+            "pc": 96456,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 344,
+            "neutral": 65136
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 344,
+            "neutral": 65136
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 344
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "bomber_1028",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 501097,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1502744,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 5588,
+            "pc": 71124,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 19904,
+            "pc": 85440,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 344,
+            "B": 56,
+            "neutral": 65136
+          },
+          "last_execution": {
+            "A": 344,
+            "B": 56,
+            "neutral": 65136
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 344,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "bomber_1028",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 500111,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1501877,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 41252,
+            "pc": 106788,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 3992,
+            "pc": 69528,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 344,
+            "neutral": 65136
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 344,
+            "neutral": 65136
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 344
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "bomber_1028",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 502061,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1502699,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 63300,
+            "pc": 128836,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 56924,
+            "pc": 122460,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 344,
+            "B": 56,
+            "neutral": 65136
+          },
+          "last_execution": {
+            "A": 344,
+            "B": 56,
+            "neutral": 65136
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 344,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "bomber_1028",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 500765,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1502094,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 3,
+          "wins_b": 0
+        },
+        "players": {
+          "A": {
+            "load_offset": 27492,
+            "pc": 93028,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 30920,
+            "pc": 96456,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 344,
+            "neutral": 65136
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 344,
+            "neutral": 65136
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 344
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "bomber_8196",
+      "role": "A",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 27359,
+          "scheduler_calls": 36412,
+          "seed": 67634689,
+          "stopped_early": true
+        },
+        "match": {
+          "instructions": 562148,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 1072824,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 5588,
+            "pc": 71124,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 19904,
+            "pc": 85440,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 408,
+            "B": 332,
+            "neutral": 64796
+          },
+          "last_execution": {
+            "A": 408,
+            "B": 332,
+            "neutral": 64796
+          },
+          "last_write": {
+            "A": 63376,
+            "B": 1136,
+            "neutral": 1024
+          },
+          "total": {
+            "A": 63784,
+            "B": 1468
+          },
+          "write_delta": {
+            "A": 59984,
+            "B": 0,
+            "neutral": 5552
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "bomber_8196",
+      "role": "B",
+      "seed": 1,
+      "result": {
+        "final_round": {
+          "instructions": 508179,
+          "scheduler_calls": 1000000,
+          "seed": 67634689,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1047508,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 2036411,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 41252,
+            "pc": 106788,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 3992,
+            "pc": 69528,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 344,
+            "neutral": 65136
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 344,
+            "neutral": 65136
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 344
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 1,
+        "winner": "A"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "bomber_8196",
+      "role": "A",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 512063,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1530355,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 3000000,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 0,
+          "wins_b": 3
+        },
+        "players": {
+          "A": {
+            "load_offset": 63300,
+            "pc": 128836,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          },
+          "B": {
+            "load_offset": 56924,
+            "pc": 122460,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 344,
+            "B": 56,
+            "neutral": 65136
+          },
+          "last_execution": {
+            "A": 344,
+            "B": 56,
+            "neutral": 65136
+          },
+          "last_write": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          },
+          "total": {
+            "A": 344,
+            "B": 65532
+          },
+          "write_delta": {
+            "A": 0,
+            "B": 65476,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "B"
+      }
+    },
+    {
+      "candidate": "carpet_64",
+      "opponent": "bomber_8196",
+      "role": "B",
+      "seed": 42,
+      "result": {
+        "final_round": {
+          "instructions": 512834,
+          "scheduler_calls": 1000000,
+          "seed": 2836018348,
+          "stopped_early": false
+        },
+        "match": {
+          "instructions": 1051675,
+          "rounds_requested": 3,
+          "rounds_run": 3,
+          "scheduler_calls": 2036412,
+          "scheduler_calls_per_round": 1000000,
+          "ticks_per_round": 500000,
+          "ties": 0,
+          "wins_a": 2,
+          "wins_b": 1
+        },
+        "players": {
+          "A": {
+            "load_offset": 27492,
+            "pc": 93028,
+            "processes": {
+              "crash_events": 0,
+              "crashed": 0,
+              "running": 1,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 56
+          },
+          "B": {
+            "load_offset": 30920,
+            "pc": 96456,
+            "processes": {
+              "crash_events": 1,
+              "crashed": 1,
+              "running": 0,
+              "total": 1,
+              "yielded": 0
+            },
+            "program_bytes": 512
+          }
+        },
+        "score": {
+          "execution_delta": {
+            "A": 56,
+            "B": 344,
+            "neutral": 65136
+          },
+          "last_execution": {
+            "A": 56,
+            "B": 344,
+            "neutral": 65136
+          },
+          "last_write": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          },
+          "total": {
+            "A": 65532,
+            "B": 344
+          },
+          "write_delta": {
+            "A": 65476,
+            "B": 0,
+            "neutral": 60
+          }
+        },
+        "seed": 42,
+        "winner": "A"
+      }
+    }
+  ]
+}

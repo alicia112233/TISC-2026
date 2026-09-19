@@ -1,0 +1,306 @@
+[
+  {
+    "name": "arithmetic",
+    "result": {
+      "final_round": {
+        "instructions": 2000,
+        "scheduler_calls": 2000,
+        "seed": 314159,
+        "stopped_early": false
+      },
+      "match": {
+        "instructions": 2000,
+        "rounds_requested": 1,
+        "rounds_run": 1,
+        "scheduler_calls": 2000,
+        "scheduler_calls_per_round": 2000,
+        "ticks_per_round": 1000,
+        "ties": 0,
+        "wins_a": 1,
+        "wins_b": 0
+      },
+      "players": {
+        "A": {
+          "load_offset": 8296,
+          "pc": 73832,
+          "processes": {
+            "crash_events": 0,
+            "crashed": 0,
+            "running": 1,
+            "total": 1,
+            "yielded": 0
+          },
+          "program_bytes": 40
+        },
+        "B": {
+          "load_offset": 4472,
+          "pc": 70008,
+          "processes": {
+            "crash_events": 0,
+            "crashed": 0,
+            "running": 1,
+            "total": 1,
+            "yielded": 0
+          },
+          "program_bytes": 4
+        }
+      },
+      "score": {
+        "execution_delta": {
+          "A": 36,
+          "B": 4,
+          "neutral": 65496
+        },
+        "last_execution": {
+          "A": 36,
+          "B": 4,
+          "neutral": 65496
+        },
+        "last_write": {
+          "A": 4,
+          "B": 0,
+          "neutral": 65532
+        },
+        "total": {
+          "A": 40,
+          "B": 4
+        },
+        "write_delta": {
+          "A": 4,
+          "B": 0,
+          "neutral": 65532
+        }
+      },
+      "seed": 314159,
+      "winner": "A"
+    }
+  },
+  {
+    "name": "narrow_load",
+    "result": {
+      "final_round": {
+        "instructions": 2000,
+        "scheduler_calls": 2000,
+        "seed": 314159,
+        "stopped_early": false
+      },
+      "match": {
+        "instructions": 2000,
+        "rounds_requested": 1,
+        "rounds_run": 1,
+        "scheduler_calls": 2000,
+        "scheduler_calls_per_round": 2000,
+        "ticks_per_round": 1000,
+        "ties": 0,
+        "wins_a": 1,
+        "wins_b": 0
+      },
+      "players": {
+        "A": {
+          "load_offset": 18020,
+          "pc": 83556,
+          "processes": {
+            "crash_events": 0,
+            "crashed": 0,
+            "running": 1,
+            "total": 1,
+            "yielded": 0
+          },
+          "program_bytes": 92
+        },
+        "B": {
+          "load_offset": 4472,
+          "pc": 70008,
+          "processes": {
+            "crash_events": 0,
+            "crashed": 0,
+            "running": 1,
+            "total": 1,
+            "yielded": 0
+          },
+          "program_bytes": 4
+        }
+      },
+      "score": {
+        "execution_delta": {
+          "A": 92,
+          "B": 4,
+          "neutral": 65440
+        },
+        "last_execution": {
+          "A": 92,
+          "B": 4,
+          "neutral": 65440
+        },
+        "last_write": {
+          "A": 4,
+          "B": 0,
+          "neutral": 65532
+        },
+        "total": {
+          "A": 96,
+          "B": 4
+        },
+        "write_delta": {
+          "A": 4,
+          "B": 0,
+          "neutral": 65532
+        }
+      },
+      "seed": 314159,
+      "winner": "A"
+    }
+  },
+  {
+    "name": "shared_scratch",
+    "result": {
+      "final_round": {
+        "instructions": 2000,
+        "scheduler_calls": 2000,
+        "seed": 314159,
+        "stopped_early": false
+      },
+      "match": {
+        "instructions": 2000,
+        "rounds_requested": 1,
+        "rounds_run": 1,
+        "scheduler_calls": 2000,
+        "scheduler_calls_per_round": 2000,
+        "ticks_per_round": 1000,
+        "ties": 0,
+        "wins_a": 1,
+        "wins_b": 0
+      },
+      "players": {
+        "A": {
+          "load_offset": 8612,
+          "pc": 74148,
+          "processes": {
+            "crash_events": 0,
+            "crashed": 0,
+            "running": 2,
+            "total": 2,
+            "yielded": 0
+          },
+          "program_bytes": 44
+        },
+        "B": {
+          "load_offset": 4472,
+          "pc": 70008,
+          "processes": {
+            "crash_events": 0,
+            "crashed": 0,
+            "running": 1,
+            "total": 1,
+            "yielded": 0
+          },
+          "program_bytes": 4
+        }
+      },
+      "score": {
+        "execution_delta": {
+          "A": 44,
+          "B": 4,
+          "neutral": 65488
+        },
+        "last_execution": {
+          "A": 44,
+          "B": 4,
+          "neutral": 65488
+        },
+        "last_write": {
+          "A": 4,
+          "B": 0,
+          "neutral": 65532
+        },
+        "total": {
+          "A": 48,
+          "B": 4
+        },
+        "write_delta": {
+          "A": 4,
+          "B": 0,
+          "neutral": 65532
+        }
+      },
+      "seed": 314159,
+      "winner": "A"
+    }
+  },
+  {
+    "name": "fork_limit",
+    "result": {
+      "final_round": {
+        "instructions": 2000,
+        "scheduler_calls": 2000,
+        "seed": 314159,
+        "stopped_early": false
+      },
+      "match": {
+        "instructions": 2000,
+        "rounds_requested": 1,
+        "rounds_run": 1,
+        "scheduler_calls": 2000,
+        "scheduler_calls_per_round": 2000,
+        "ticks_per_round": 1000,
+        "ties": 0,
+        "wins_a": 1,
+        "wins_b": 0
+      },
+      "players": {
+        "A": {
+          "load_offset": 8296,
+          "pc": 73832,
+          "processes": {
+            "crash_events": 0,
+            "crashed": 0,
+            "running": 4,
+            "total": 4,
+            "yielded": 0
+          },
+          "program_bytes": 40
+        },
+        "B": {
+          "load_offset": 4472,
+          "pc": 70008,
+          "processes": {
+            "crash_events": 0,
+            "crashed": 0,
+            "running": 1,
+            "total": 1,
+            "yielded": 0
+          },
+          "program_bytes": 4
+        }
+      },
+      "score": {
+        "execution_delta": {
+          "A": 40,
+          "B": 4,
+          "neutral": 65492
+        },
+        "last_execution": {
+          "A": 40,
+          "B": 4,
+          "neutral": 65492
+        },
+        "last_write": {
+          "A": 0,
+          "B": 0,
+          "neutral": 65536
+        },
+        "total": {
+          "A": 40,
+          "B": 4
+        },
+        "write_delta": {
+          "A": 0,
+          "B": 0,
+          "neutral": 65536
+        }
+      },
+      "seed": 314159,
+      "winner": "A"
+    }
+  }
+]
