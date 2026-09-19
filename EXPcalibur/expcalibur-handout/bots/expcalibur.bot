@@ -1,0 +1,67 @@
+# EXPcalibur competition bot
+#
+# Finish low-HP targets, orbit inside swing range, retreat before contact,
+# widen the safety radius at level 6, and steer around fixed terrain.
+
+fn safe_move(dx, dy) {
+    let x = my_x();
+    let y = my_y();
+    let sx = dx > 0 ? 72 : (dx < 0 ? -72 : 0);
+    let sy = dy > 0 ? 72 : (dy < 0 ? -72 : 0);
+    if (!is_solid(x + sx, y + sy)) { move(dx, dy); }
+    else if (!is_solid(x + sy, y - sx)) { move(sy, -sx); }
+    else if (!is_solid(x - sy, y + sx)) { move(-sy, sx); }
+    else { step_toward(3104, 3104); }
+}
+
+fn main() {
+    sense();
+    let n = enemy_count();
+    let nearest = -1;
+    let aim = -1;
+    let lowest_hp = 999999;
+    let x = my_x();
+    let y = my_y();
+    let aim_radius = my_reach() + 35;
+    let i = 0;
+
+    while (i < n) {
+        # Type 15 is a projectile, not a killable target.
+        if (enemy_type(i) != 15) {
+            if (nearest < 0) { nearest = i; }
+            let tx = x - enemy_x(i);
+            let ty = y - enemy_y(i);
+            if (tx * tx + ty * ty < aim_radius * aim_radius && enemy_hp(i) < lowest_hp) {
+                aim = i;
+                lowest_hp = enemy_hp(i);
+            }
+        }
+        i += 1;
+    }
+
+    if (nearest < 0) { step_toward(3104, 3104); return; }
+    if (aim < 0) { aim = nearest; }
+    aim_at(enemy_x(aim), enemy_y(aim));
+
+    let ex = enemy_x(nearest);
+    let ey = enemy_y(nearest);
+    let dx = ex - x;
+    let dy = ey - y;
+    let d2 = dx * dx + dy * dy;
+    let close = 45;
+    if (my_level() >= 6) { close = 60; }
+
+    # Tangential edge turns avoid being trapped against the solid border.
+    if (x < 450)  { safe_move(1000, -500);  return; }
+    if (x > 5694) { safe_move(-1000, 500);  return; }
+    if (y < 450)  { safe_move(500, 1000);   return; }
+    if (y > 5694) { safe_move(-500, -1000); return; }
+
+    if (d2 < close * close) {
+        safe_move(-dx, -dy);
+    } else if (d2 > (my_reach() + 30) * (my_reach() + 30)) {
+        safe_move(dx * 2 - dy, dy * 2 + dx);
+    } else {
+        safe_move(-dy, dx);
+    }
+}

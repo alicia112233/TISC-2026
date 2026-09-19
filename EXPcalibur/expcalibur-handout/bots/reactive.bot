@@ -1,0 +1,96 @@
+fn dist2(ax, ay, bx, by) {
+    let dx = ax - bx;
+    let dy = ay - by;
+    return dx * dx + dy * dy;
+}
+
+fn safe_move(dx, dy) {
+    let x = my_x();
+    let y = my_y();
+    let sx = dx > 0 ? 96 : (dx < 0 ? -96 : 0);
+    let sy = dy > 0 ? 96 : (dy < 0 ? -96 : 0);
+    if (!is_solid(x + sx, y + sy)) {
+        move(dx, dy);
+    } else if (!is_solid(x + sy, y - sx)) {
+        move(sy, -sx);
+    } else if (!is_solid(x - sy, y + sx)) {
+        move(-sy, sx);
+    } else {
+        step_toward(3104, 3104);
+    }
+}
+
+fn main() {
+    sense();
+    let n = enemy_count();
+    let gn = gem_count();
+    look_world();
+
+    let target = -1;
+    let projectile = -1;
+    let i = 0;
+    while (i < n) {
+        if (enemy_type(i) == 15 && projectile < 0) {
+            projectile = i;
+        } else if (enemy_type(i) != 15 && target < 0) {
+            target = i;
+        }
+        i += 1;
+    }
+
+    if (target >= 0) {
+        aim_at(enemy_x(target), enemy_y(target));
+    }
+
+    let x = my_x();
+    let y = my_y();
+    if (tele_kind() != 0) {
+        let tx = x - tele_x();
+        let ty = y - tele_y();
+        let rr = tele_radius() + 160;
+        if (tx * tx + ty * ty < rr * rr) {
+            safe_move(tx, ty);
+            return;
+        }
+    }
+
+    if (projectile >= 0 && dist2(x, y, enemy_x(projectile), enemy_y(projectile)) < 260 * 260) {
+        let px = enemy_x(projectile) - x;
+        let py = enemy_y(projectile) - y;
+        if ((game_tick() / 120) % 2 == 0) {
+            safe_move(py, -px);
+        } else {
+            safe_move(-py, px);
+        }
+        return;
+    }
+
+    if (target >= 0) {
+        let dx = enemy_x(target) - x;
+        let dy = enemy_y(target) - y;
+        let d = dx * dx + dy * dy;
+        let reach = my_reach();
+        if (d < (reach + 60) * (reach + 60)) {
+            safe_move(-dx, -dy);
+            return;
+        }
+    }
+
+    if (gn > 0) {
+        let best = 0;
+        let best_value = gem_value(0);
+        i = 1;
+        while (i < gn) {
+            if (gem_value(i) > best_value) {
+                best = i;
+                best_value = gem_value(i);
+            }
+            i += 1;
+        }
+        safe_move(gem_x(best) - x, gem_y(best) - y);
+    } else if (target >= 0) {
+        safe_move(enemy_y(target) - y, x - enemy_x(target));
+    } else {
+        step_toward(3104, 3104);
+    }
+}

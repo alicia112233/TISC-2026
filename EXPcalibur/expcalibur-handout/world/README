@@ -1,0 +1,30 @@
+EXPCALIBUR-CTF — The Arena
+==========================
+
+There is no map file to ship: the arena is generated deterministically INSIDE
+the engine (built into `bin/expc-run`) from a fixed seed, so every run — local
+or on the server — uses the byte-identical map.
+
+Dimensions
+----------
+  Tiles          96 x 96
+  Tile size      64 px
+  World          6144 x 6144 px   (MAP_SIZE = 6144; coordinates are integer px)
+  Map seed       20240629         (fixed literal, never varies per run)
+  Spawn point    (3104, 3104)     (arena centre)
+
+Layout
+------
+  - A solid 2-tile-thick border ring around the whole map (impassable, water).
+  - A deterministic rock/bush scatter over the interior, drawn from the fixed
+    map seed: each interior tile rolls a value 0..99 — a small fraction become
+    solid rock, a few more become bush (which slows movement).
+  - The central spawn arena (a square around the centre) is kept clear of rocks
+    and bush so the hero always starts in open ground.
+
+Because the map seed is a fixed literal — separate from the per-run gameplay
+seed you pass with `--seed` — the terrain is the same on every seed. Only the
+enemy/gem spawns and boss schedule vary with the run seed.
+
+You do not need this file to write a bot; it is here so you know the ground you
+are standing on. The runner reads none of this — it rebuilds the map itself.

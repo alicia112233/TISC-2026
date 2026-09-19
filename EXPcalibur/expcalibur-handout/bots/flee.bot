@@ -1,0 +1,42 @@
+fn dist2(ax, ay, bx, by) {
+    let dx = ax - bx;
+    let dy = ay - by;
+    return dx * dx + dy * dy;
+}
+
+fn safe_move(dx, dy) {
+    let x = my_x();
+    let y = my_y();
+    let sx = dx > 0 ? 96 : (dx < 0 ? -96 : 0);
+    let sy = dy > 0 ? 96 : (dy < 0 ? -96 : 0);
+    if (!is_solid(x + sx, y + sy)) {
+        move(dx, dy);
+    } else if (!is_solid(x + sy, y - sx)) {
+        move(sy, -sx);
+    } else if (!is_solid(x - sy, y + sx)) {
+        move(-sy, sx);
+    } else {
+        step_toward(3104, 3104);
+    }
+}
+
+fn main() {
+    sense();
+    let n = enemy_count();
+    let e = -1;
+    let i = 0;
+    while (i < n) {
+        if (enemy_type(i) != 15 && e < 0) {
+            e = i;
+        }
+        i += 1;
+    }
+    if (e >= 0) {
+        let ex = enemy_x(e);
+        let ey = enemy_y(e);
+        aim_at(ex, ey);
+        safe_move(my_x() - ex, my_y() - ey);
+    } else {
+        step_toward(3104, 3104);
+    }
+}

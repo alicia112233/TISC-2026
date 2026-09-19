@@ -1,0 +1,26 @@
+fn safe_move(dx, dy) {
+    let x = my_x(); let y = my_y();
+    let sx = dx > 0 ? 96 : (dx < 0 ? -96 : 0);
+    let sy = dy > 0 ? 96 : (dy < 0 ? -96 : 0);
+    if (!is_solid(x + sx, y + sy)) { move(dx, dy); }
+    else if (!is_solid(x + sy, y - sx)) { move(dy, -dx); }
+    else if (!is_solid(x - sy, y + sx)) { move(-dy, dx); }
+    else { step_toward(3104, 3104); }
+}
+
+fn main() {
+    sense();
+    let n = enemy_count();
+    let e = 0;
+    while (e < n && enemy_type(e) == 15) { e += 1; }
+    if (e >= n) { step_toward(3104, 3104); return; }
+    let x = my_x(); let y = my_y();
+    let ex = enemy_x(e); let ey = enemy_y(e);
+    let dx = x - ex; let dy = y - ey;
+    aim_at(ex, ey);
+    if (x < 512) { dx = 1000; }
+    if (x > 5632) { dx = -1000; }
+    if (y < 512) { dy = 1000; }
+    if (y > 5632) { dy = -1000; }
+    safe_move(dx, dy);
+}

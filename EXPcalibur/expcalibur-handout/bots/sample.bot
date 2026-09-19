@@ -1,0 +1,17 @@
+# sample.bot — the headline ready-to-upload example. This is starter.bot given
+# a friendly name: compile it (or just upload the shipped sample.bin) and watch
+# the full submit -> grade -> replay pipeline before you write your own.
+#
+# Only documented stdlib: sense / nearest_enemy / step_toward / aim_at. It walks
+# to the closest enemy, faces it (auto-swing does the hitting), and the XP orbs
+# its kills drop are auto-collected as it walks over them.
+
+fn main() {
+    sense();                              # refresh senses for this tick
+    let e = nearest_enemy();              # closest enemy, or -1
+    if (e >= 0) {
+        aim_at(enemy_x(e), enemy_y(e));   # face it; swings fire on cooldown
+        step_toward(enemy_x(e), enemy_y(e));
+    }
+    # pickup is automatic
+}
