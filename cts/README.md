@@ -1,4 +1,11 @@
-# Capture The System
+# Companion Challenge: Capture The System (EXPCalibur)
+
+## Challenge Information
+- **Event**: TISC 2026
+- **Category**: Custom Architecture / VM Reverse Engineering & Bot Warfare
+- **Reference**: Unlocked alongside Level 2 ("Don’t forget to check out the other available challenge, EXPCalibur, at the top of the page. Be warned — danger lurks. Are you ready to face the horde?")
+
+---
 
 The supplied FAQ and executor have been read and reversed. The selected bot is
 `bot.bin` (raw bytes) or `bot.hex` (the same program as hex text). Upload either
@@ -42,20 +49,20 @@ From this workspace in PowerShell:
 
 ```powershell
 python bot_source.py
-wsl -d Ubuntu -- bash -lc 'cd /mnt/c/Users/alici/Downloads/cts; python3 local_battle.py bot.bin bots/bomber_68.bin'
+wsl -d Ubuntu -- bash -lc 'cd /cts; python3 local_battle.py bot.bin bots/bomber_68.bin'
 ```
 
 Run the recovered-ISA behavioral checks:
 
 ```powershell
-wsl -d Ubuntu -- bash -lc 'cd /mnt/c/Users/alici/Downloads/cts; python3 verify_isa.py'
+wsl -d Ubuntu -- bash -lc 'cd /cts; python3 verify_isa.py'
 ```
 
 Rebuild all local opponents and reproduce the selected bot's holdout:
 
 ```powershell
 python build_bots.py
-wsl -d Ubuntu -- bash -lc 'cd /mnt/c/Users/alici/Downloads/cts; python3 evaluate_bots.py --candidates fast_4100_8192 --opponents bomber_4 bomber_68 bomber_1028 bomber_8196 sweeper_32_17 small_68_4096 distributed_68 fast_4100 carpet_32 --seeds 2 271828 424242 3735928559 1129599776 --both-roles --output analysis/reproduced_benchmark.json'
+wsl -d Ubuntu -- bash -lc 'cd /cts; python3 evaluate_bots.py --candidates fast_4100_8192 --opponents bomber_4 bomber_68 bomber_1028 bomber_8196 sweeper_32_17 small_68_4096 distributed_68 fast_4100 carpet_32 --seeds 2 271828 424242 3735928559 1129599776 --both-roles --output analysis/reproduced_benchmark.json'
 python summarize_results.py analysis/reproduced_benchmark.json
 ```
 
