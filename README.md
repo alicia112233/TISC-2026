@@ -14,57 +14,101 @@ A comprehensive collection of challenge solutions, research artifacts, decompile
 
 | Level | Challenge Name | Category | Primary Focus / Technique | Status | Flag |
 | :---: | :--- | :--- | :--- | :---: | :--- |
-| **1** | [**REDACTED**] | Forensics / DocSec | Superficial PDF vector redaction bypass | Solved | `TISC{BRO!RedactPDFsProperlyLah!!!}` |
-| **2** | [**My Printer has a Secret**] | Stego / Passive OSINT | 3-bit color triangle decoding & Gunpla OSINT | Solved | `TISC{abn2263123_grey_MS-18E}` |
-| **3** | [**Lion City Layover**] | Web / RE / WASM | Next.js maze routing, WebAssembly state verification | Solved | `TISC{w3lc0m3_70_51ng4p0r3_l4h_61}` |
-| **4** | [**ZyGPT**] | AI / Reverse Engineering | SafeTensors neural network weight steganography | Solved | `TISC{h1d3_1t_d33p_th3_w31ghts_d0nt_l13}` |
-| **5** | [**Trash Talk**] | Network / Protocol RE | Nintendo DS Pokémon GTS covert communication | In Progress | Protocol Analyzed |
-| **Bonus** | [**Capture The System (EXPCalibur)**] | Custom VM / Bot Arena | Custom bytecode Core War bomber assembly & benchmarks | Completed | Holdout 90.0% Win Rate |
+| **1** | [**REDACTED**](redacted/README.md) | Forensics / DocSec | Superficial PDF vector redaction bypass | Solved | `TISC{BRO!RedactPDFsProperlyLah!!!}` |
+| **2** | [**My Printer has a Secret**](printer-secret/README.md) | Stego / Passive OSINT | 3-bit color triangle decoding & Gunpla OSINT | Solved | `TISC{abn2263123_grey_MS-18E}` |
+| **3** | [**Lion City Layover**](lioncity/README.md) | Web / RE / WASM | Next.js maze routing, WebAssembly state verification | Solved | `TISC{w3lc0m3_70_51ng4p0r3_l4h_61}` |
+| **4** | [**ZyGPT**](zyGPT/README.md) | AI / Reverse Engineering | SafeTensors neural network weight steganography | Solved | `TISC{h1d3_1t_d33p_th3_w31ghts_d0nt_l13}` |
+| **5** | [**Trash Talk**](trash-talk/README.md) | Network / Protocol RE | Nintendo DS Gen IV/V GTS covert communication | Solved | `TISC{p0lyg0n4l_p1d_ch41n_4cr0ss_g3ns}` |
+| **Bonus** | [**Capture The System**](cts/README.md) | Custom VM / Bot Arena | Custom bytecode Core War bomber assembly & benchmarks | Locally benchmarked | 90.0% local holdout win rate |
+| **Bonus** | [**EXPcalibur**](EXPcalibur/expcalibur-handout/README.md) | Survivor Arena / Bot Programming | VM bot compilation, practice seeds, replay analysis | Handout and tools available | See scoring guide |
 
 ---
 
 ## Repository Structure
 
+Selected files and directories are shown below; challenge folders also contain supporting captures, probes, and intermediate results.
+
 ```text
 TISC 2026/
-├── README.md                          # Main repository index & challenge tracker
-├── redacted/                          # LEVEL 1: REDACTED
-│   ├── README.md                      # Level 1 detailed solution & analysis
-│   └── TISC-26-091-SINGULARITY.pdf    # Declassified briefing document
-├── printer-secret/                    # LEVEL 2: My Printer has a Secret
-│   ├── README.md                      # Level 2 detailed solution & OSINT notes
-│   ├── printer-secret.png             # Scanned custom steganographic page
-│   ├── analyze_tag.py                 # Triangle palette extraction script
-│   ├── try_bits.py                    # Permutation and bit unpacker
-│   ├── open_archive.py                # Password-protected ZIP unpacker
-│   ├── secret-archive.zip             # Recovered challenge archive
-│   ├── printer-secret-part2.txt       # OSINT briefing and questions
-│   └── *.html / *.jpg / *.png         # Passive OSINT evidence & images
-├── lioncity/                          # LEVEL 3: Lion City Layover
-│   ├── README.md                      # Level 3 detailed solution & WASM notes
-│   ├── index.html                     # Web client frontend bundle
-│   ├── start.json                     # Session parameters & maze layouts
-│   ├── singa_legacy.wasm              # WebAssembly game evaluation cartridge
-│   ├── recover_claim.py               # Replay solver computing verified claim
-│   ├── claim.txt                      # Validated session claim
-│   └── flag-response.json             # Server response containing flag
-├── zyGPT/                             # LEVEL 4: ZyGPT
-│   ├── README.md                      # Level 4 detailed solution & weights analysis
-│   ├── model_modeling_zygpt.py        # Qwen-based PyTorch architecture
-│   ├── safetensors_header.json        # Tensor definitions and byte offsets
-│   ├── scan_carriers.py               # Weight statistical abnormality scanner
-│   ├── solve_flag.py                  # Reproducible weight decryption script
-│   └── flag_result.json               # Extracted plaintext flag & carrier metadata
-├── trash-talk/                        # LEVEL 5: Trash Talk
-│   ├── README.md                      # Level 5 reconnaissance & protocol analysis
-│   └── trash-talk-ds.jpg              # Counter-intelligence DSi photograph
-└── cts/                               # COMPANION / EXPCalibur: Capture The System
-    ├── README.md                      # Custom VM architecture & bot battle benchmarks
-    ├── RECOVERED_VM.md                # Decompiled ISA specification & register layout
-    ├── bot_source.py                  # Source for selected 'fast_4100_8192' bomber bot
-    ├── build_bots.py                  # Bot compiler & test harness
-    └── evaluate_bots.py               # Arena battle evaluation script
+|-- README.md                          # Repository index and challenge tracker
+|-- .gitignore                         # Generated caches and large model exclusions
+|-- redacted/                          # Level 1: REDACTED
+|   |-- README.md
+|   `-- TISC-26-091-SINGULARITY.pdf
+|-- printer-secret/                    # Level 2: My Printer has a Secret
+|   |-- README.md
+|   |-- printer-secret.png
+|   |-- analyze_tag.py
+|   |-- try_bits.py
+|   |-- open_archive.py
+|   |-- passive_fetch.py
+|   |-- secret-archive.zip
+|   `-- printer-secret-part2.txt
+|-- lioncity/                          # Level 3: Lion City Layover
+|   |-- README.md
+|   |-- index.html
+|   |-- start.json
+|   |-- singa_legacy.wasm
+|   |-- inspect_challenge.py
+|   |-- dump_harbour.py
+|   |-- replay_solver.py
+|   |-- recover_claim.py
+|   |-- claim.txt
+|   `-- flag-response.json
+|-- zyGPT/                             # Level 4: ZyGPT
+|   |-- README.md
+|   |-- requirements.txt
+|   |-- model_configuration_zygpt.py
+|   |-- model_modeling_zygpt.py
+|   |-- safetensors_header.json
+|   |-- download_weights.py
+|   |-- scan_carriers.py
+|   |-- solve_flag.py
+|   |-- flag_result.json
+|   |-- carriers/                      # Local tensor slices (Git-ignored)
+|   `-- model/                         # Local model weights (Git-ignored)
+|-- trash-talk/                        # Level 5: Trash Talk
+|   |-- README.md
+|   |-- trash-talk-ds.jpg
+|   |-- solve.py                       # Gen IV/V GTS client and decryption
+|   |-- stage2.py                      # Final trades and offline flag recovery
+|   |-- flag.txt
+|   |-- artifacts/                     # Saved trade responses and decoded records
+|   `-- research/                      # Downloaded protocol reference source
+|-- cts/                               # Capture The System VM and bot workspace
+|   |-- README.md
+|   |-- RECOVERED_VM.md
+|   |-- Capture The System FAQ.pdf
+|   |-- executor
+|   |-- bot_source.py
+|   |-- bot.bin
+|   |-- bot.hex
+|   |-- cts_asm.py
+|   |-- build_bots.py
+|   |-- local_battle.py
+|   |-- evaluate_bots.py
+|   |-- summarize_results.py
+|   |-- verify_isa.py
+|   |-- submit_bot.py
+|   |-- bots/                          # Generated strategies and local opponents
+|   `-- analysis/                      # Disassembly, ISA checks, and benchmarks
+`-- EXPcalibur/                        # Survivor-arena handout and tools
+    |-- EXPcalibur-TISC-Scoring-Guide.pdf
+    |-- expcalibur-handout.tgz
+    `-- expcalibur-handout/
+        |-- README.md                  # Player guide and local workflow
+        |-- main-app.js
+        |-- flee.exrp                  # Saved replay
+        |-- bin/                       # expc-cc compiler and expc-run runner
+        |-- bots/                      # Bot source and compiled VM images
+        |-- seeds/practice/            # Seven public practice seeds
+        |-- tools/analyze_replay.py
+        `-- world/                     # Arena generation notes
 ```
+
+Printer Secret's OSINT evidence and Lion City's JavaScript bundles, images, JSON captures, and WASM replays remain alongside their solvers. ZyGPT also contains tokenizer/configuration files, extraction scripts, diagnostics, and model samples.
+
+Local editor settings (`.vscode/`), Python caches (`__pycache__/`, `*.pyc`), and large model artifacts are excluded by [.gitignore](.gitignore). The ignored model directories shown above may therefore be absent from a fresh clone.
 
 ---
 
@@ -120,11 +164,17 @@ TISC 2026/
 - **Resolution**:
   1. Identified the emulated IIS 6.0 GTS server mimicking `gamestats2.nintendowifi.net`.
   2. Inspected counter-intelligence photo `trash-talk-ds.jpg` identifying the target trade: Porygon Lv. 25 deposited by AGENT in Singapore.
-  3. Reverse-engineered the Gen IV GTS `.pkm` binary structure (PRNG shuffling, block decryption, and string buffer trash bytes).
+  3. Recovered the Generation V instructions from Porygon nickname trash bytes, then decoded hidden Porygon2 target PIDs.
+  4. Traded a male level-35 Buizel for three Porygon-Z records and decoded the PID-XOR flag fragments with `stage2.py`.
+- **Flag**: `TISC{p0lyg0n4l_p1d_ch41n_4cr0ss_g3ns}`
+- **Offline recovery** (from the repository root): `python trash-talk/stage2.py --offline`.
 
-### [Companion: Capture The System (EXPCalibur)]
+### Companion: [Capture The System](cts/README.md)
 - **Context**: Autonomous virtual arena bot battle challenge unlocked alongside Level 2.
 - **Resolution**:
   1. Fully reversed the custom 16-bit virtual machine architecture (`RECOVERED_VM.md`).
   2. Developed a 4-process distributed bombing bot (`fast_4100_8192` via `bot_source.py`) that replicates across 4 memory quadrants and clears memory with a 4100-byte modular stride.
-  3. Achieved a **90.0% win rate (81/90 matches)** across holdout benchmark opponents.
+  3. Achieved a **90.0% win rate (81/90 matches)** against self-built local holdout opponents. The CTS writeup records no live submission.
+### Companion: [EXPcalibur](EXPcalibur/expcalibur-handout/README.md)
+
+The separate `EXPcalibur/` directory contains the survivor-arena player handout, original archive, and scoring guide. Its extracted handout includes the `expc-cc` compiler, `expc-run` local runner, example bot sources and binaries, seven practice seeds, and a replay analysis tool. See the linked player guide for compilation, local runs, and grading commands.

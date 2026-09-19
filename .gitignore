@@ -7,3 +7,5 @@ zyGPT/model/
 zyGPT/carriers/
 zyGPT/upstream_embeddings.bin
 zyGPT/base_sample.bin
+
+.vscode/

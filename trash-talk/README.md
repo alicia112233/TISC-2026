@@ -1,92 +1,121 @@
 # Level 5: Trash Talk
 
-## Challenge Information
-- **Event**: TISC 2026
-- **Level**: Level 5
-- **Category**: Network Forensics / Custom Protocol Reverse Engineering (Nintendo DS GTS)
+**Flag:** `TISC{p0lyg0n4l_p1d_ch41n_4cr0ss_g3ns}`
 
-## Description
-> The Singularity's agents have been passing messages that we urgently need to intercept.  
-> We've traced their traffic to `http://chals.tisc26.ctf.sg:31259/`. They seem to be taking it chill though, seemingly playing Pokémon Platinum.  
-> Counter-intelligence has snapped a picture that could help us.
+## Reproduce the recovery
 
----
+From the repository root:
 
-## Challenge Files & Artifacts
-- [`trash-talk-ds.jpg`]: High-resolution photograph captured by counter-intelligence showing a player on a Nintendo DSi.
-- Target Server: `http://chals.tisc26.ctf.sg:31259/`
-
----
-
-## Technical Reconnaissance & Analysis
-
-### 1. Photo Analysis (`trash-talk-ds.jpg`)
-Inspection of the photo reveals key intelligence:
-- **Device & Game**: Nintendo DSi running **Pokémon Platinum** (Generation IV, Sinnoh region).
-- **Location in Game**: The Global Trade Station (GTS) in Jubilife City.
-- **Top Screen Deposit Data**:
-  - **Species**: `PORYGON` (National Pokédex #137)
-  - **Level**: `25`
-  - **Original Trainer (O.T.)**: `AGENT`
-  - **Offerer**: `AGENT`
-  - **Held Item**: `None`
-  - **OT's Location**: `Singapore`
-
-### 2. Server Fingerprinting
-Probing the target endpoint at `http://chals.tisc26.ctf.sg:31259/`:
-```http
-HTTP/1.1 200 OK
-Server: Microsoft-IIS/6.0
-Content-Type: text/plain
-Content-Length: 2
-
-ok
+```powershell
+python trash-talk/stage2.py --offline
 ```
 
-The response mimics Nintendo’s official Gen IV Wi-Fi Connection GTS server (`gamestats2.nintendowifi.net`). Official GTS servers ran on Windows Server 2003 with IIS 6.0 and responded with `ok` on root path health checks.
+This decrypts the saved trade responses, verifies their Pokemon checksums,
+recovers the three fragments, and writes `trash-talk/flag.txt`.
+Run without `--offline` to repeat the final trades against the challenge server.
+The client requires Python and `requests`.
 
-### 3. The Gen IV GTS Protocol
-In Generation IV Pokémon games, the Nintendo DS interacts with the GTS using classic HTTP GET/POST queries to ASP endpoints:
-- `/pr/search.asp`: Searches available Pokémon deposits by species, gender, country, and requested Pokémon.
-- `/pr/result.asp`: Downloads the trade binary payload.
-- `/pr/post.asp`: Uploads a deposited Pokémon.
+## Challenge
 
-Parameters are typically obfuscated or base64/binary encoded, and the returned data is an encrypted `.pkm` file structure (136 bytes for storage, 236 bytes for party format).
+The supplied photo shows Pokemon Platinum's Global Trade Station with a
+level-25 Porygon belonging to `AGENT`. The challenge service is
+`http://chals.tisc26.ctf.sg:31259/`.
 
-### 4. "Trash Talk" & Pokémon Data Internals
-The challenge title **"Trash Talk"** is a direct double-meaning:
-1. **Trash Bytes**: In Gen IV games, string buffers (like Nicknames and OT Names) contain 16-bit characters terminated by `0xFFFF`. In legitimate games, the bytes following the terminator are uninitialized memory fragments ("trash bytes"). These bytes are notoriously scrutinized in competitive Pokémon legality checks to determine if a Pokémon was genuinely caught in-game or injected via save editors.
-2. **Covert Communication**: The Singularity is using these trash bytes or encrypted block attributes within GTS deposit payloads to exfiltrate secrets covertly across public GTS servers without raising alarms.
+## 1. Porygon nickname trash bytes
 
----
+The Generation IV search endpoint is
+`/pokemondpds/worldexchange/search.asp`. `solve.py` implements the GTS
+challenge/response handshake, request encoding, and Pokemon decryption.
+Search for species 137, decrypt the 292-byte records, and order the records
+by their deposit timestamps (the little-endian 64-bit field at `0xF8`).
 
-## Solution Methodology
+Pokemon data uses a checksum-seeded LCG to encrypt the four shuffled 32-byte
+blocks. The party extension uses the Pokemon PID as its seed. Every captured
+record used below passes its checksum after decryption.
 
-### 1. Intercepting the Porygon Deposit
-Query `/pr/search.asp` or `/pr/result.asp` with species code 137 (Porygon) and country code for Singapore:
+The bytes at `0x58:0x5E`, after the PORYGON nickname's `FFFF` terminator,
+contain fragments. Strip zero padding from each fragment and concatenate:
+
+```text
+G3N5_BL4CKWH1T3;P0RYG0N2_TR4SH=P1D_L3_X0R_K;K=C3236F27
+```
+
+The complete set of ten records is saved in `artifacts/porygon-all.bin`.
+
+## 2. Generation V and the hidden trade targets
+
+Switch to `/syachi2ds/web/worldexchange/search.asp` and search for species
+233 (Porygon2). Generation V uses a different request salt and encoding,
+and appends a SHA-1 footer to its responses. `solve.py` verifies that footer.
+The search body starts with `01 00`, followed by 296-byte records.
+
+Two search results are Ditto decoys with the nickname `NOT ME!`; check the
+species in the decrypted Pokemon data, not only the GTS search metadata.
+The three real Porygon2 trainer names, in deposit order, are:
+
+```text
+0FF3R_M
+BU1Z3L
+Lv30-40
+```
+
+Each Porygon2 has four hidden bytes at `0x5A:0x5E`. Recover the target PID as:
+
 ```python
-import requests
-
-GTS_URL = "http://chals.tisc26.ctf.sg:31259"
-# Query the search endpoint for deposited Porygon
-# Emulate DS GTS user-agent / query headers
+target_pid = int.from_bytes(decoded[0x5A:0x5E], "little") ^ 0xC3236F27
 ```
 
-### 2. Decrypting the Gen IV PKM Binary
-Once the 136-byte or 236-byte Pokémon binary is retrieved:
-1. Read the **Personality Value (PID)** (`offset 0x00`, 32-bit integer) and **Checksum** (`offset 0x06`, 16-bit integer).
-2. Seed the Gen IV Linear Congruential Generator (LCG):
-   $$\text{Seed} = \text{Checksum}$$
-   $$\text{Seed}_{n+1} = (\text{Seed}_n \times 0x41C64E6D + 0x6073) \pmod{2^{32}}$$
-3. Unshuffle the 4 blocks (A, B, C, D) using the block order index:
-   $$\text{Order Index} = \left(\frac{\text{PID} \ \& \ 0x3E000}{0x2000}\right) \pmod{24}$$
-4. Decrypt the 128 bytes of block data using the PRNG keystream.
+| Trainer | Hidden bytes | Target PID |
+| --- | --- | --- |
+| 0FF3R_M | f5 f1 b4 24 | 3885473490 |
+| BU1Z3L | e8 c6 3b 75 | 3055069647 |
+| Lv30-40 | 7d 2b df 1e | 3724297306 |
 
-### 3. Recovering the Secret
-Inspect the unencrypted fields:
-- OT Name buffer and following trash bytes (`offset 0x68` - `0x77`)
-- Nickname buffer and trash bytes (`offset 0x48` - `0x5D`)
-- Secret ID (SID) and Trainer ID (TID)
-- Individual Values (IVs) / Extra ribbon flags
+The original `stage2.py` XORed directly with `bytes.fromhex("C3236F27")`.
+That reverses the key's byte order relative to the little-endian integer,
+producing incorrect target IDs and `02 00` trade failures. The fixed solver
+XORs the integers and packs the resulting target as little-endian.
 
-The message transmitted by The Singularity's AGENT contains the flag in `TISC{...}` format.
+These target IDs exceed the signed 32-bit range accepted by the URL PID
+parser. Keep the client's normal PID in the URL and put the target ID in
+the binary trade payload.
+
+## 3. Trade a Buizel and decode the flag
+
+Construct a male level-35 Buizel and send a 432-byte payload to
+`/syachi2ds/web/worldexchange/exchange.asp`:
+
+```text
+296-byte offered Pokemon/GTS record
+4-byte target PID (little-endian)
+128 zero bytes
+4-byte terminator (0x80000000, little-endian)
+```
+
+Each successful response contains a 296-byte Porygon-Z record, followed
+by the Generation V SHA-1 footer. The three captured response bodies are:
+
+- `artifacts/exchange-3885473490.bin`
+- `artifacts/exchange-3055069647.bin`
+- `artifacts/exchange-3724297306.bin`
+
+Their trainer name is `P1D_X0R`, and their nickname is `PZ`. XOR the 16 bytes
+after the nickname terminator (`0x4E:0x5E`) with the four little-endian PID
+bytes repeated four times. In deposit order, this yields:
+
+```text
+TISC{p0lyg0n4l_p
+1d_ch41n_4cr0ss_
+g3ns}
+```
+
+The final fragment has zero padding. Remove it and concatenate to recover
+the flag above. 
+
+## Protocol references
+
+- [Project Pokemon GTS protocol documentation](https://projectpokemon.org/docs/gen-5/gts-protocol-r19/)
+- [pkmnFoundations Generation V handler](https://github.com/mm201/pkmnFoundations/blob/master/gts/syachi2ds.ashx.cs)
+- [pkmnFoundations Generation V record layout](https://github.com/mm201/pkmnFoundations/blob/master/library/Wfc/GtsRecord5.cs)
+
+The downloaded reference source files are in `research/`.
