@@ -1,0 +1,19 @@
+b'authenticate first': fileoff=0x1fc4d va=0x1fc4d
+b'master-control override granted': fileoff=0x1d85a va=0x1d85a
+b'master-control key rejected': fileoff=0x1d83f va=0x1d83f
+b'codon.stream.inject': fileoff=0x1bd15 va=0x1bd15
+b'client authenticated': fileoff=0x1d491 va=0x1d491
+b'unknown opcode': fileoff=0x1ecfe va=0x1ecfe
+b'lease issued': fileoff=0x1d4a6 va=0x1d4a6
+b'unknown or expired master-control voucher': fileoff=0x1d3f1 va=0x1d3f1
+b'omnitrix.master_control.prepare': fileoff=0x1f694 va=0x1f694
+b'need 21 bytes': fileoff=0x1f6b5 va=0x1f6b5
+b'imported ': fileoff=0x18056 va=0x18056
+b'bytes into codon vault': fileoff=0x18062 va=0x18062
+b'elf content rejected': fileoff=0x1b127 va=0x1b127
+b'raw-syscall density': fileoff=0x1e7f1 va=0x1e7f1
+b'blob: plaintext': fileoff=0x170c0 va=0x170c0
+b'/bin/zsh': fileoff=0x1d600 va=0x1d600
+b'execveat': fileoff=0x1d608 va=0x1d608
+b'master-control voucher belongs': fileoff=0x1d89e va=0x1d89e
+

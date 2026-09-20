@@ -1,0 +1,22 @@
+### op 0x10 auth format discovery (fresh conn each) ###
+[u16len+cred] payload=000c62656e2e74656e6e79736f6e -> "..malformed frame: truncated string lengthOMNI...........'..malformed frame: bad magic 0x000e000c"
+[u32len+cred] payload=0000000c62656e2e74656e6e79736f6e -> "..malformed frame: truncated string lengthOMNI...........'..malformed frame: bad magic 0x00100000"
+[u8len+cred] payload=0c62656e2e74656e6e79736f6e -> '..malformed frame: truncated string length'
+[raw cred] payload=62656e2e74656e6e79736f6e -> '..malformed frame: truncated string length'
+[u16+cred+u16pad] payload=000c62656e2e74656e6e79736f6e0000 -> "..malformed frame: truncated string lengthOMNI...........'..malformed frame: bad magic 0x0010000c"
+
+### persistent-session exploration ###
+[u16len+cred] AUTH resp -> '..malformed frame: truncated string length'
+   op 0x20 -> '..malformed frame: bad magic 0x0e000c62'
+[u16len+cred] ERR [Errno 32] Broken pipe
+[u32len+cred] AUTH resp -> "..malformed frame: truncated string lengthOMNI...........'..malformed frame: bad magic 0x10000000"
+[u32len+cred] ERR [Errno 32] Broken pipe
+[u8len+cred] AUTH resp -> '..malformed frame: truncated string length'
+   op 0x20 -> '..malformed frame: bad magic 0x0d0c6265'
+[u8len+cred] ERR [Errno 32] Broken pipe
+[raw cred] AUTH resp -> '..malformed frame: truncated string length'
+   op 0x20 -> '..malformed frame: bad magic 0x0c62656e'
+[raw cred] ERR [Errno 32] Broken pipe
+[u16+cred+u16pad] AUTH resp -> "..malformed frame: truncated string lengthOMNI...........'..malformed frame: bad magic 0x10000c62"
+[u16+cred+u16pad] ERR [Errno 32] Broken pipe
+DONE

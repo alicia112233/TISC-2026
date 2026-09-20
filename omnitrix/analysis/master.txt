@@ -1,0 +1,485 @@
+
+/home/alicia/omni/omnitrix:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+000000000005ac00 <.text+0x57e0>:
+   5ac00:	0e                   	(bad)
+   5ac01:	4c 89 8c 24 ee 00 00 	mov    QWORD PTR [rsp+0xee],r9
+   5ac08:	00 
+   5ac09:	66 44 89 94 24 f6 00 	mov    WORD PTR [rsp+0xf6],r10w
+   5ac10:	00 00 
+   5ac12:	48 c7 84 24 c0 00 00 	mov    QWORD PTR [rsp+0xc0],0x10
+   5ac19:	00 10 00 00 00 
+   5ac1e:	48 83 fa 1f          	cmp    rdx,0x1f
+   5ac22:	0f 87 9b 00 00 00    	ja     5acc3 <__cxa_finalize@plt-0x10368d>
+   5ac28:	48 89 bc 24 90 00 00 	mov    QWORD PTR [rsp+0x90],rdi
+   5ac2f:	00 
+   5ac30:	48 8d 84 24 c0 00 00 	lea    rax,[rsp+0xc0]
+   5ac37:	00 
+   5ac38:	48 89 44 24 10       	mov    QWORD PTR [rsp+0x10],rax
+   5ac3d:	48 8b 05 8c 22 11 00 	mov    rax,QWORD PTR [rip+0x11228c]        # 16ced0 <_Unwind_Resume@plt+0xeb70>
+   5ac44:	48 89 44 24 18       	mov    QWORD PTR [rsp+0x18],rax
+   5ac49:	48 8d 8c 24 90 00 00 	lea    rcx,[rsp+0x90]
+   5ac50:	00 
+   5ac51:	48 89 4c 24 20       	mov    QWORD PTR [rsp+0x20],rcx
+   5ac56:	48 89 44 24 28       	mov    QWORD PTR [rsp+0x28],rax
+   5ac5b:	48 8d 35 66 1a fc ff 	lea    rsi,[rip+0xfffffffffffc1a66]        # 1c6c8 <__cxa_finalize@plt-0x141c88>
+   5ac62:	48 8d 7c 24 68       	lea    rdi,[rsp+0x68]
+   5ac67:	48 8d 54 24 10       	lea    rdx,[rsp+0x10]
+   5ac6c:	ff 15 ae 21 11 00    	call   QWORD PTR [rip+0x1121ae]        # 16ce20 <_Unwind_Resume@plt+0xeac0>
+   5ac72:	48 8b 44 24 68       	mov    rax,QWORD PTR [rsp+0x68]
+   5ac77:	48 8b 4c 24 70       	mov    rcx,QWORD PTR [rsp+0x70]
+   5ac7c:	48 8b 54 24 78       	mov    rdx,QWORD PTR [rsp+0x78]
+   5ac81:	89 ce                	mov    esi,ecx
+   5ac83:	48 89 cf             	mov    rdi,rcx
+   5ac86:	48 c1 ef 10          	shr    rdi,0x10
+   5ac8a:	48 c1 e9 30          	shr    rcx,0x30
+   5ac8e:	66 89 4b 1e          	mov    WORD PTR [rbx+0x1e],cx
+   5ac92:	89 7b 1a             	mov    DWORD PTR [rbx+0x1a],edi
+   5ac95:	48 89 53 20          	mov    QWORD PTR [rbx+0x20],rdx
+   5ac99:	48 89 43 10          	mov    QWORD PTR [rbx+0x10],rax
+   5ac9d:	66 89 73 18          	mov    WORD PTR [rbx+0x18],si
+   5aca1:	66 c7 43 08 00 00    	mov    WORD PTR [rbx+0x8],0x0
+   5aca7:	48 c7 03 01 00 00 00 	mov    QWORD PTR [rbx],0x1
+   5acae:	48 89 d8             	mov    rax,rbx
+   5acb1:	48 81 c4 38 01 00 00 	add    rsp,0x138
+   5acb8:	5b                   	pop    rbx
+   5acb9:	41 5c                	pop    r12
+   5acbb:	41 5d                	pop    r13
+   5acbd:	41 5e                	pop    r14
+   5acbf:	41 5f                	pop    r15
+   5acc1:	5d                   	pop    rbp
+   5acc2:	c3                   	ret
+   5acc3:	49 89 cd             	mov    r13,rcx
+   5acc6:	4c 89 84 24 f8 00 00 	mov    QWORD PTR [rsp+0xf8],r8
+   5accd:	00 
+   5acce:	48 83 c2 e0          	add    rdx,0xffffffffffffffe0
+   5acd2:	48 8d 4e 20          	lea    rcx,[rsi+0x20]
+   5acd6:	48 89 8c 24 b0 00 00 	mov    QWORD PTR [rsp+0xb0],rcx
+   5acdd:	00 
+   5acde:	48 89 94 24 b8 00 00 	mov    QWORD PTR [rsp+0xb8],rdx
+   5ace5:	00 
+   5ace6:	8b 08                	mov    ecx,DWORD PTR [rax]
+   5ace8:	89 8c 24 d8 00 00 00 	mov    DWORD PTR [rsp+0xd8],ecx
+   5acef:	0f b7 40 04          	movzx  eax,WORD PTR [rax+0x4]
+   5acf3:	66 89 84 24 dc 00 00 	mov    WORD PTR [rsp+0xdc],ax
+   5acfa:	00 
+   5acfb:	48 8b 46 16          	mov    rax,QWORD PTR [rsi+0x16]
+   5acff:	0f b7 4e 1e          	movzx  ecx,WORD PTR [rsi+0x1e]
+   5ad03:	48 89 84 24 de 00 00 	mov    QWORD PTR [rsp+0xde],rax
+   5ad0a:	00 
+   5ad0b:	66 89 8c 24 e6 00 00 	mov    WORD PTR [rsp+0xe6],cx
+   5ad12:	00 
+   5ad13:	48 8d 7c 24 10       	lea    rdi,[rsp+0x10]
+   5ad18:	48 8d b4 24 b0 00 00 	lea    rsi,[rsp+0xb0]
+   5ad1f:	00 
+   5ad20:	e8 7b 5d 01 00       	call   70aa0 <__cxa_finalize@plt-0xed8b0>
+   5ad25:	0f b7 44 24 10       	movzx  eax,WORD PTR [rsp+0x10]
+   5ad2a:	66 83 f8 ff          	cmp    ax,0xffff
+   5ad2e:	74 2d                	je     5ad5d <__cxa_finalize@plt-0x1035f3>
+   5ad30:	0f b7 4c 24 16       	movzx  ecx,WORD PTR [rsp+0x16]
+   5ad35:	66 89 4b 0e          	mov    WORD PTR [rbx+0xe],cx
+   5ad39:	8b 4c 24 12          	mov    ecx,DWORD PTR [rsp+0x12]
+   5ad3d:	89 4b 0a             	mov    DWORD PTR [rbx+0xa],ecx
+   5ad40:	f3 0f 6f 44 24 18    	movdqu xmm0,XMMWORD PTR [rsp+0x18]
+   5ad46:	48 8b 4c 24 28       	mov    rcx,QWORD PTR [rsp+0x28]
+   5ad4b:	f3 0f 7f 43 10       	movdqu XMMWORD PTR [rbx+0x10],xmm0
+   5ad50:	48 89 4b 20          	mov    QWORD PTR [rbx+0x20],rcx
+   5ad54:	66 89 43 08          	mov    WORD PTR [rbx+0x8],ax
+   5ad58:	e9 4a ff ff ff       	jmp    5aca7 <__cxa_finalize@plt-0x1036a9>
+   5ad5d:	48 8b 44 24 18       	mov    rax,QWORD PTR [rsp+0x18]
+   5ad62:	48 89 44 24 08       	mov    QWORD PTR [rsp+0x8],rax
+   5ad67:	4c 8b 7c 24 20       	mov    r15,QWORD PTR [rsp+0x20]
+   5ad6c:	4c 8b 74 24 28       	mov    r14,QWORD PTR [rsp+0x28]
+   5ad71:	ff 15 d9 20 11 00    	call   QWORD PTR [rip+0x1120d9]        # 16ce50 <_Unwind_Resume@plt+0xeaf0>
+   5ad77:	4d 8b 6d 00          	mov    r13,QWORD PTR [r13+0x0]
+   5ad7b:	49 8b 75 18          	mov    rsi,QWORD PTR [r13+0x18]
+   5ad7f:	48 83 c6 10          	add    rsi,0x10
+   5ad83:	48 89 ac 24 98 00 00 	mov    QWORD PTR [rsp+0x98],rbp
+   5ad8a:	00 
+   5ad8b:	4c 89 a4 24 90 00 00 	mov    QWORD PTR [rsp+0x90],r12
+   5ad92:	00 
+   5ad93:	89 14 24             	mov    DWORD PTR [rsp],edx
+   5ad96:	48 8d 7c 24 10       	lea    rdi,[rsp+0x10]
+   5ad9b:	48 8d 94 24 90 00 00 	lea    rdx,[rsp+0x90]
+   5ada2:	00 
+   5ada3:	4c 8d 84 24 e8 00 00 	lea    r8,[rsp+0xe8]
+   5adaa:	00 
+   5adab:	b9 02 00 00 00       	mov    ecx,0x2
+   5adb0:	49 89 c1             	mov    r9,rax
+   5adb3:	e8 98 d4 ff ff       	call   58250 <__cxa_finalize@plt-0x106100>
+   5adb8:	83 7c 24 18 ff       	cmp    DWORD PTR [rsp+0x18],0xffffffff
+   5adbd:	0f 84 89 00 00 00    	je     5ae4c <__cxa_finalize@plt-0x103504>
+   5adc3:	49 8b 75 28          	mov    rsi,QWORD PTR [r13+0x28]
+   5adc7:	48 83 c6 10          	add    rsi,0x10
+   5adcb:	48 8d 7c 24 10       	lea    rdi,[rsp+0x10]
+   5add0:	48 8d 94 24 d8 00 00 	lea    rdx,[rsp+0xd8]
+   5add7:	00 
+   5add8:	e8 83 e7 01 00       	call   79560 <__cxa_finalize@plt-0xe4df0>
+   5addd:	0f b6 44 24 34       	movzx  eax,BYTE PTR [rsp+0x34]
+   5ade2:	48 3d ff 00 00 00    	cmp    rax,0xff
+   5ade8:	0f 84 8c 00 00 00    	je     5ae7a <__cxa_finalize@plt-0x1034d6>
+   5adee:	4c 33 64 24 20       	xor    r12,QWORD PTR [rsp+0x20]
+   5adf3:	48 33 6c 24 28       	xor    rbp,QWORD PTR [rsp+0x28]
+   5adf8:	4c 09 e5             	or     rbp,r12
+   5adfb:	0f 85 ae 00 00 00    	jne    5aeaf <__cxa_finalize@plt-0x1034a1>
+   5ae01:	48 89 84 24 a8 00 00 	mov    QWORD PTR [rsp+0xa8],rax
+   5ae08:	00 
+   5ae09:	8b 6c 24 30          	mov    ebp,DWORD PTR [rsp+0x30]
+   5ae0d:	48 8d bc 24 c0 00 00 	lea    rdi,[rsp+0xc0]
+   5ae14:	00 
+   5ae15:	e8 76 f7 01 00       	call   7a590 <__cxa_finalize@plt-0xe3dc0>
+   5ae1a:	4c 8b a4 24 c8 00 00 	mov    r12,QWORD PTR [rsp+0xc8]
+   5ae21:	00 
+   5ae22:	4c 3b b4 24 d0 00 00 	cmp    r14,QWORD PTR [rsp+0xd0]
+   5ae29:	00 
+   5ae2a:	0f 85 0b 02 00 00    	jne    5b03b <__cxa_finalize@plt-0x103315>
+   5ae30:	4d 85 f6             	test   r14,r14
+   5ae33:	0f 84 5e 02 00 00    	je     5b097 <__cxa_finalize@plt-0x1032b9>
+   5ae39:	49 83 fe 04          	cmp    r14,0x4
+   5ae3d:	0f 83 e1 00 00 00    	jae    5af24 <__cxa_finalize@plt-0x10342c>
+   5ae43:	31 c9                	xor    ecx,ecx
+   5ae45:	31 c0                	xor    eax,eax
+   5ae47:	e9 d8 01 00 00       	jmp    5b024 <__cxa_finalize@plt-0x10332c>
+   5ae4c:	f3 0f 6f 44 24 20    	movdqu xmm0,XMMWORD PTR [rsp+0x20]
+   5ae52:	f3 0f 6f 4c 24 30    	movdqu xmm1,XMMWORD PTR [rsp+0x30]
+   5ae58:	f3 0f 7f 4c 24 7c    	movdqu XMMWORD PTR [rsp+0x7c],xmm1
+   5ae5e:	f3 0f 7f 44 24 6c    	movdqu XMMWORD PTR [rsp+0x6c],xmm0
+   5ae64:	f3 0f 7f 4b 18       	movdqu XMMWORD PTR [rbx+0x18],xmm1
+   5ae69:	f3 0f 7f 43 08       	movdqu XMMWORD PTR [rbx+0x8],xmm0
+   5ae6e:	48 c7 03 01 00 00 00 	mov    QWORD PTR [rbx],0x1
+   5ae75:	e9 86 04 00 00       	jmp    5b300 <__cxa_finalize@plt-0x103050>
+   5ae7a:	48 8d 7c 24 68       	lea    rdi,[rsp+0x68]
+   5ae7f:	e8 5c d3 ff ff       	call   581e0 <__cxa_finalize@plt-0x106170>
+   5ae84:	f3 0f 6f 44 24 68    	movdqu xmm0,XMMWORD PTR [rsp+0x68]
+   5ae8a:	f3 0f 6f 4c 24 78    	movdqu xmm1,XMMWORD PTR [rsp+0x78]
+   5ae90:	66 0f 7f 84 24 90 00 	movdqa XMMWORD PTR [rsp+0x90],xmm0
+   5ae97:	00 00 
+   5ae99:	f3 0f 7f 43 08       	movdqu XMMWORD PTR [rbx+0x8],xmm0
+   5ae9e:	f3 0f 7f 4b 18       	movdqu XMMWORD PTR [rbx+0x18],xmm1
+   5aea3:	48 c7 03 01 00 00 00 	mov    QWORD PTR [rbx],0x1
+   5aeaa:	e9 51 04 00 00       	jmp    5b300 <__cxa_finalize@plt-0x103050>
+   5aeaf:	ff 15 73 1f 11 00    	call   QWORD PTR [rip+0x111f73]        # 16ce28 <_Unwind_Resume@plt+0xeac8>
+   5aeb5:	bf 35 00 00 00       	mov    edi,0x35
+   5aeba:	be 01 00 00 00       	mov    esi,0x1
+   5aebf:	ff 15 6b 1f 11 00    	call   QWORD PTR [rip+0x111f6b]        # 16ce30 <_Unwind_Resume@plt+0xead0>
+   5aec5:	48 85 c0             	test   rax,rax
+   5aec8:	0f 84 46 01 00 00    	je     5b014 <__cxa_finalize@plt-0x10333c>
+   5aece:	0f 10 05 e9 29 fc ff 	movups xmm0,XMMWORD PTR [rip+0xfffffffffffc29e9]        # 1d8be <__cxa_finalize@plt-0x140a92>
+   5aed5:	0f 11 40 20          	movups XMMWORD PTR [rax+0x20],xmm0
+   5aed9:	0f 10 05 ce 29 fc ff 	movups xmm0,XMMWORD PTR [rip+0xfffffffffffc29ce]        # 1d8ae <__cxa_finalize@plt-0x140aa2>
+   5aee0:	0f 11 40 10          	movups XMMWORD PTR [rax+0x10],xmm0
+   5aee4:	f3 0f 6f 05 b2 29 fc 	movdqu xmm0,XMMWORD PTR [rip+0xfffffffffffc29b2]        # 1d89e <__cxa_finalize@plt-0x140ab2>
+   5aeeb:	ff 
+   5aeec:	f3 0f 7f 00          	movdqu XMMWORD PTR [rax],xmm0
+   5aef0:	48 b9 20 73 65 73 73 	movabs rcx,0x6e6f697373657320
+   5aef7:	69 6f 6e 
+   5aefa:	48 89 48 2d          	mov    QWORD PTR [rax+0x2d],rcx
+   5aefe:	66 c7 43 08 03 00    	mov    WORD PTR [rbx+0x8],0x3
+   5af04:	48 c7 43 10 35 00 00 	mov    QWORD PTR [rbx+0x10],0x35
+   5af0b:	00 
+   5af0c:	48 89 43 18          	mov    QWORD PTR [rbx+0x18],rax
+   5af10:	48 c7 43 20 35 00 00 	mov    QWORD PTR [rbx+0x20],0x35
+   5af17:	00 
+   5af18:	48 c7 03 01 00 00 00 	mov    QWORD PTR [rbx],0x1
+   5af1f:	e9 dc 03 00 00       	jmp    5b300 <__cxa_finalize@plt-0x103050>
+   5af24:	49 83 fe 20          	cmp    r14,0x20
+   5af28:	73 09                	jae    5af33 <__cxa_finalize@plt-0x10341d>
+   5af2a:	31 c0                	xor    eax,eax
+   5af2c:	31 c9                	xor    ecx,ecx
+   5af2e:	e9 87 00 00 00       	jmp    5afba <__cxa_finalize@plt-0x103396>
+   5af33:	4c 89 f0             	mov    rax,r14
+   5af36:	48 83 e0 e0          	and    rax,0xffffffffffffffe0
+   5af3a:	66 0f ef c0          	pxor   xmm0,xmm0
+   5af3e:	31 c9                	xor    ecx,ecx
+   5af40:	66 0f ef c9          	pxor   xmm1,xmm1
+   5af44:	f3 41 0f 6f 14 0f    	movdqu xmm2,XMMWORD PTR [r15+rcx*1]
+   5af4a:	f3 41 0f 6f 5c 0f 10 	movdqu xmm3,XMMWORD PTR [r15+rcx*1+0x10]
+   5af51:	f3 41 0f 6f 24 0c    	movdqu xmm4,XMMWORD PTR [r12+rcx*1]
+   5af57:	66 0f ef e2          	pxor   xmm4,xmm2
+   5af5b:	66 0f eb cc          	por    xmm1,xmm4
+   5af5f:	f3 41 0f 6f 54 0c 10 	movdqu xmm2,XMMWORD PTR [r12+rcx*1+0x10]
+   5af66:	66 0f ef d3          	pxor   xmm2,xmm3
+   5af6a:	66 0f eb c2          	por    xmm0,xmm2
+   5af6e:	48 83 c1 20          	add    rcx,0x20
+   5af72:	48 39 c8             	cmp    rax,rcx
+   5af75:	75 cd                	jne    5af44 <__cxa_finalize@plt-0x10340c>
+   5af77:	66 0f eb c1          	por    xmm0,xmm1
+   5af7b:	66 0f 70 c8 ee       	pshufd xmm1,xmm0,0xee
+   5af80:	66 0f eb c8          	por    xmm1,xmm0
+   5af84:	66 0f 70 c1 55       	pshufd xmm0,xmm1,0x55
+   5af89:	66 0f eb c1          	por    xmm0,xmm1
+   5af8d:	66 0f 6f c8          	movdqa xmm1,xmm0
+   5af91:	66 0f 72 d1 10       	psrld  xmm1,0x10
+   5af96:	66 0f eb c8          	por    xmm1,xmm0
+   5af9a:	66 0f 6f c1          	movdqa xmm0,xmm1
+   5af9e:	66 0f 71 d0 08       	psrlw  xmm0,0x8
+   5afa3:	66 0f eb c1          	por    xmm0,xmm1
+   5afa7:	66 0f 7e c1          	movd   ecx,xmm0
+   5afab:	49 39 c6             	cmp    r14,rax
+   5afae:	0f 84 83 00 00 00    	je     5b037 <__cxa_finalize@plt-0x103319>
+   5afb4:	41 f6 c6 1c          	test   r14b,0x1c
+   5afb8:	74 6a                	je     5b024 <__cxa_finalize@plt-0x10332c>
+   5afba:	48 89 c2             	mov    rdx,rax
+   5afbd:	4c 89 f0             	mov    rax,r14
+   5afc0:	48 83 e0 fc          	and    rax,0xfffffffffffffffc
+   5afc4:	0f b6 c9             	movzx  ecx,cl
+   5afc7:	66 0f 6e c1          	movd   xmm0,ecx
+   5afcb:	41 8b 0c 14          	mov    ecx,DWORD PTR [r12+rdx*1]
+   5afcf:	41 33 0c 17          	xor    ecx,DWORD PTR [r15+rdx*1]
+   5afd3:	66 0f 6e c9          	movd   xmm1,ecx
+   5afd7:	66 0f eb c1          	por    xmm0,xmm1
+   5afdb:	48 83 c2 04          	add    rdx,0x4
+   5afdf:	48 39 d0             	cmp    rax,rdx
+   5afe2:	75 e7                	jne    5afcb <__cxa_finalize@plt-0x103385>
+   5afe4:	66 0f 6f c8          	movdqa xmm1,xmm0
+   5afe8:	66 0f 72 d1 10       	psrld  xmm1,0x10
+   5afed:	66 0f eb c8          	por    xmm1,xmm0
+   5aff1:	66 0f 6f c1          	movdqa xmm0,xmm1
+   5aff5:	66 0f 71 d0 08       	psrlw  xmm0,0x8
+   5affa:	66 0f eb c1          	por    xmm0,xmm1
+   5affe:	66 0f 7e c1          	movd   ecx,xmm0
+   5b002:	eb 2e                	jmp    5b032 <__cxa_finalize@plt-0x10331e>
+   5b004:	bf 01 00 00 00       	mov    edi,0x1
+   5b009:	be 12 00 00 00       	mov    esi,0x12
+   5b00e:	ff 15 24 1e 11 00    	call   QWORD PTR [rip+0x111e24]        # 16ce38 <_Unwind_Resume@plt+0xead8>
+   5b014:	bf 01 00 00 00       	mov    edi,0x1
+   5b019:	be 35 00 00 00       	mov    esi,0x35
+   5b01e:	ff 15 14 1e 11 00    	call   QWORD PTR [rip+0x111e14]        # 16ce38 <_Unwind_Resume@plt+0xead8>
+   5b024:	41 0f b6 14 04       	movzx  edx,BYTE PTR [r12+rax*1]
+   5b029:	41 32 14 07          	xor    dl,BYTE PTR [r15+rax*1]
+   5b02d:	48 ff c0             	inc    rax
+   5b030:	08 d1                	or     cl,dl
+   5b032:	49 39 c6             	cmp    r14,rax
+   5b035:	75 ed                	jne    5b024 <__cxa_finalize@plt-0x10332c>
+   5b037:	84 c9                	test   cl,cl
+   5b039:	74 5c                	je     5b097 <__cxa_finalize@plt-0x1032b9>
+   5b03b:	ff 15 e7 1d 11 00    	call   QWORD PTR [rip+0x111de7]        # 16ce28 <_Unwind_Resume@plt+0xeac8>
+   5b041:	bf 1b 00 00 00       	mov    edi,0x1b
+   5b046:	be 01 00 00 00       	mov    esi,0x1
+   5b04b:	ff 15 df 1d 11 00    	call   QWORD PTR [rip+0x111ddf]        # 16ce30 <_Unwind_Resume@plt+0xead0>
+   5b051:	48 85 c0             	test   rax,rax
+   5b054:	0f 84 e1 02 00 00    	je     5b33b <__cxa_finalize@plt-0x103015>
+   5b05a:	0f 10 05 e9 27 fc ff 	movups xmm0,XMMWORD PTR [rip+0xfffffffffffc27e9]        # 1d84a <__cxa_finalize@plt-0x140b06>
+   5b061:	0f 11 40 0b          	movups XMMWORD PTR [rax+0xb],xmm0
+   5b065:	f3 0f 6f 05 d2 27 fc 	movdqu xmm0,XMMWORD PTR [rip+0xfffffffffffc27d2]        # 1d83f <__cxa_finalize@plt-0x140b11>
+   5b06c:	ff 
+   5b06d:	f3 0f 7f 00          	movdqu XMMWORD PTR [rax],xmm0
+   5b071:	66 c7 43 08 03 00    	mov    WORD PTR [rbx+0x8],0x3
+   5b077:	48 c7 43 10 1b 00 00 	mov    QWORD PTR [rbx+0x10],0x1b
+   5b07e:	00 
+   5b07f:	48 89 43 18          	mov    QWORD PTR [rbx+0x18],rax
+   5b083:	48 c7 43 20 1b 00 00 	mov    QWORD PTR [rbx+0x20],0x1b
+   5b08a:	00 
+   5b08b:	48 c7 03 01 00 00 00 	mov    QWORD PTR [rbx],0x1
+   5b092:	e9 4e 02 00 00       	jmp    5b2e5 <__cxa_finalize@plt-0x10306b>
+   5b097:	49 8b 7d 28          	mov    rdi,QWORD PTR [r13+0x28]
+   5b09b:	48 83 c7 10          	add    rdi,0x10
+   5b09f:	0f b6 8c 24 a8 00 00 	movzx  ecx,BYTE PTR [rsp+0xa8]
+   5b0a6:	00 
+   5b0a7:	89 ce                	mov    esi,ecx
+   5b0a9:	41 89 ed             	mov    r13d,ebp
+   5b0ac:	89 ea                	mov    edx,ebp
+   5b0ae:	e8 5d e3 01 00       	call   79410 <__cxa_finalize@plt-0xe4f40>
+   5b0b3:	48 8b 05 a6 1d 11 00 	mov    rax,QWORD PTR [rip+0x111da6]        # 16ce60 <_Unwind_Resume@plt+0xeb00>
+   5b0ba:	48 8b 00             	mov    rax,QWORD PTR [rax]
+   5b0bd:	48 83 f8 02          	cmp    rax,0x2
+   5b0c1:	0f 87 94 01 00 00    	ja     5b25b <__cxa_finalize@plt-0x1030f5>
+   5b0c7:	0f b6 05 0a 49 11 00 	movzx  eax,BYTE PTR [rip+0x11490a]        # 16f9d8 <_Unwind_Resume@plt+0x11678>
+   5b0ce:	0f b6 c8             	movzx  ecx,al
+   5b0d1:	8d 51 ff             	lea    edx,[rcx-0x1]
+   5b0d4:	83 fa 02             	cmp    edx,0x2
+   5b0d7:	0f 83 76 01 00 00    	jae    5b253 <__cxa_finalize@plt-0x1030fd>
+   5b0dd:	48 8b 3d e4 48 11 00 	mov    rdi,QWORD PTR [rip+0x1148e4]        # 16f9c8 <_Unwind_Resume@plt+0x11668>
+   5b0e4:	0f b6 f0             	movzx  esi,al
+   5b0e7:	ff 15 7b 1d 11 00    	call   QWORD PTR [rip+0x111d7b]        # 16ce68 <_Unwind_Resume@plt+0xeb08>
+   5b0ed:	84 c0                	test   al,al
+   5b0ef:	0f 84 66 01 00 00    	je     5b25b <__cxa_finalize@plt-0x1030f5>
+   5b0f5:	4c 8b 35 cc 48 11 00 	mov    r14,QWORD PTR [rip+0x1148cc]        # 16f9c8 <_Unwind_Resume@plt+0x11668>
+   5b0fc:	49 83 c6 30          	add    r14,0x30
+   5b100:	48 8d 05 53 27 fc ff 	lea    rax,[rip+0xfffffffffffc2753]        # 1d85a <__cxa_finalize@plt-0x140af6>
+   5b107:	48 89 84 24 18 01 00 	mov    QWORD PTR [rsp+0x118],rax
+   5b10e:	00 
+   5b10f:	48 c7 84 24 20 01 00 	mov    QWORD PTR [rsp+0x120],0x3f
+   5b116:	00 3f 00 00 00 
+   5b11b:	48 8b 84 24 f8 00 00 	mov    rax,QWORD PTR [rsp+0xf8]
+   5b122:	00 
+   5b123:	48 83 c0 20          	add    rax,0x20
+   5b127:	48 89 84 24 00 01 00 	mov    QWORD PTR [rsp+0x100],rax
+   5b12e:	00 
+   5b12f:	48 8d 84 24 d8 00 00 	lea    rax,[rsp+0xd8]
+   5b136:	00 
+   5b137:	48 89 84 24 08 01 00 	mov    QWORD PTR [rsp+0x108],rax
+   5b13e:	00 
+   5b13f:	48 8d 05 32 4b 10 00 	lea    rax,[rip+0x104b32]        # 15fc78 <_Unwind_Resume@plt+0x1918>
+   5b146:	48 8b 94 24 a8 00 00 	mov    rdx,QWORD PTR [rsp+0xa8]
+   5b14d:	00 
+   5b14e:	48 8b 04 d0          	mov    rax,QWORD PTR [rax+rdx*8]
+   5b152:	48 8d 0d 17 2c fc ff 	lea    rcx,[rip+0xfffffffffffc2c17]        # 1dd70 <__cxa_finalize@plt-0x1405e0>
+   5b159:	48 8b 0c d1          	mov    rcx,QWORD PTR [rcx+rdx*8]
+   5b15d:	48 89 84 24 28 01 00 	mov    QWORD PTR [rsp+0x128],rax
+   5b164:	00 
+   5b165:	48 89 8c 24 30 01 00 	mov    QWORD PTR [rsp+0x130],rcx
+   5b16c:	00 
+   5b16d:	48 8d ac 24 90 00 00 	lea    rbp,[rsp+0x90]
+   5b174:	00 
+   5b175:	48 89 ef             	mov    rdi,rbp
+   5b178:	e8 33 e9 01 00       	call   79ab0 <__cxa_finalize@plt-0xe48a0>
+   5b17d:	48 89 ac 24 10 01 00 	mov    QWORD PTR [rsp+0x110],rbp
+   5b184:	00 
+   5b185:	48 8d 84 24 18 01 00 	lea    rax,[rsp+0x118]
+   5b18c:	00 
+   5b18d:	48 89 44 24 10       	mov    QWORD PTR [rsp+0x10],rax
+   5b192:	48 8d 05 a7 43 10 00 	lea    rax,[rip+0x1043a7]        # 15f540 <_Unwind_Resume@plt+0x11e0>
+   5b199:	48 89 44 24 18       	mov    QWORD PTR [rsp+0x18],rax
+   5b19e:	48 8d 84 24 00 01 00 	lea    rax,[rsp+0x100]
+   5b1a5:	00 
+   5b1a6:	48 89 44 24 20       	mov    QWORD PTR [rsp+0x20],rax
+   5b1ab:	48 8d 05 26 44 10 00 	lea    rax,[rip+0x104426]        # 15f5d8 <_Unwind_Resume@plt+0x1278>
+   5b1b2:	48 89 44 24 28       	mov    QWORD PTR [rsp+0x28],rax
+   5b1b7:	48 8d 8c 24 08 01 00 	lea    rcx,[rsp+0x108]
+   5b1be:	00 
+   5b1bf:	48 89 4c 24 30       	mov    QWORD PTR [rsp+0x30],rcx
+   5b1c4:	48 89 44 24 38       	mov    QWORD PTR [rsp+0x38],rax
+   5b1c9:	48 8d 84 24 28 01 00 	lea    rax,[rsp+0x128]
+   5b1d0:	00 
+   5b1d1:	48 89 44 24 40       	mov    QWORD PTR [rsp+0x40],rax
+   5b1d6:	48 8d 05 3b 44 10 00 	lea    rax,[rip+0x10443b]        # 15f618 <_Unwind_Resume@plt+0x12b8>
+   5b1dd:	48 89 44 24 48       	mov    QWORD PTR [rsp+0x48],rax
+   5b1e2:	48 8d 84 24 10 01 00 	lea    rax,[rsp+0x110]
+   5b1e9:	00 
+   5b1ea:	48 89 44 24 50       	mov    QWORD PTR [rsp+0x50],rax
+   5b1ef:	48 8d 05 02 44 10 00 	lea    rax,[rip+0x104402]        # 15f5f8 <_Unwind_Resume@plt+0x1298>
+   5b1f6:	48 89 44 24 58       	mov    QWORD PTR [rsp+0x58],rax
+   5b1fb:	48 c7 44 24 68 01 00 	mov    QWORD PTR [rsp+0x68],0x1
+   5b202:	00 00 
+   5b204:	48 8d 44 24 10       	lea    rax,[rsp+0x10]
+   5b209:	48 89 44 24 70       	mov    QWORD PTR [rsp+0x70],rax
+   5b20e:	48 c7 44 24 78 05 00 	mov    QWORD PTR [rsp+0x78],0x5
+   5b215:	00 00 
+   5b217:	4c 89 b4 24 80 00 00 	mov    QWORD PTR [rsp+0x80],r14
+   5b21e:	00 
+   5b21f:	48 8b 3d a2 47 11 00 	mov    rdi,QWORD PTR [rip+0x1147a2]        # 16f9c8 <_Unwind_Resume@plt+0x11668>
+   5b226:	48 8d 74 24 68       	lea    rsi,[rsp+0x68]
+   5b22b:	ff 15 3f 1c 11 00    	call   QWORD PTR [rip+0x111c3f]        # 16ce70 <_Unwind_Resume@plt+0xeb10>
+   5b231:	48 8b b4 24 90 00 00 	mov    rsi,QWORD PTR [rsp+0x90]
+   5b238:	00 
+   5b239:	48 85 f6             	test   rsi,rsi
+   5b23c:	74 1d                	je     5b25b <__cxa_finalize@plt-0x1030f5>
+   5b23e:	48 8b bc 24 98 00 00 	mov    rdi,QWORD PTR [rsp+0x98]
+   5b245:	00 
+   5b246:	ba 01 00 00 00       	mov    edx,0x1
+   5b24b:	ff 15 b7 1a 11 00    	call   QWORD PTR [rip+0x111ab7]        # 16cd08 <_Unwind_Resume@plt+0xe9a8>
+   5b251:	eb 08                	jmp    5b25b <__cxa_finalize@plt-0x1030f5>
+   5b253:	85 c9                	test   ecx,ecx
+   5b255:	0f 85 c6 00 00 00    	jne    5b321 <__cxa_finalize@plt-0x10302f>
+   5b25b:	41 0f cd             	bswap  r13d
+   5b25e:	4c 8b b4 24 a8 00 00 	mov    r14,QWORD PTR [rsp+0xa8]
+   5b265:	00 
+   5b266:	44 88 74 24 68       	mov    BYTE PTR [rsp+0x68],r14b
+   5b26b:	44 89 6c 24 69       	mov    DWORD PTR [rsp+0x69],r13d
+   5b270:	48 8d 6c 24 10       	lea    rbp,[rsp+0x10]
+   5b275:	be 2d 00 00 00       	mov    esi,0x2d
+   5b27a:	48 89 ef             	mov    rdi,rbp
+   5b27d:	e8 0e d7 ff ff       	call   58990 <__cxa_finalize@plt-0x1059c0>
+   5b282:	44 88 b4 24 90 00 00 	mov    BYTE PTR [rsp+0x90],r14b
+   5b289:	00 
+   5b28a:	4c 8b 35 0f 1c 11 00 	mov    r14,QWORD PTR [rip+0x111c0f]        # 16cea0 <_Unwind_Resume@plt+0xeb40>
+   5b291:	48 8d b4 24 90 00 00 	lea    rsi,[rsp+0x90]
+   5b298:	00 
+   5b299:	ba 01 00 00 00       	mov    edx,0x1
+   5b29e:	48 89 ef             	mov    rdi,rbp
+   5b2a1:	41 ff d6             	call   r14
+   5b2a4:	48 8d 74 24 68       	lea    rsi,[rsp+0x68]
+   5b2a9:	ba 05 00 00 00       	mov    edx,0x5
+   5b2ae:	48 89 ef             	mov    rdi,rbp
+   5b2b1:	41 ff d6             	call   r14
+   5b2b4:	48 8d 35 be 25 fc ff 	lea    rsi,[rip+0xfffffffffffc25be]        # 1d879 <__cxa_finalize@plt-0x140ad7>
+   5b2bb:	ba 25 00 00 00       	mov    edx,0x25
+   5b2c0:	48 89 ef             	mov    rdi,rbp
+   5b2c3:	e8 88 57 01 00       	call   70a50 <__cxa_finalize@plt-0xed900>
+   5b2c8:	f3 0f 6f 44 24 10    	movdqu xmm0,XMMWORD PTR [rsp+0x10]
+   5b2ce:	f3 0f 6f 4c 24 20    	movdqu xmm1,XMMWORD PTR [rsp+0x20]
+   5b2d4:	f3 0f 7f 4b 18       	movdqu XMMWORD PTR [rbx+0x18],xmm1
+   5b2d9:	f3 0f 7f 43 08       	movdqu XMMWORD PTR [rbx+0x8],xmm0
+   5b2de:	48 c7 03 00 00 00 00 	mov    QWORD PTR [rbx],0x0
+   5b2e5:	48 8b b4 24 c0 00 00 	mov    rsi,QWORD PTR [rsp+0xc0]
+   5b2ec:	00 
+   5b2ed:	48 85 f6             	test   rsi,rsi
+   5b2f0:	74 0e                	je     5b300 <__cxa_finalize@plt-0x103050>
+   5b2f2:	ba 01 00 00 00       	mov    edx,0x1
+   5b2f7:	4c 89 e7             	mov    rdi,r12
+   5b2fa:	ff 15 08 1a 11 00    	call   QWORD PTR [rip+0x111a08]        # 16cd08 <_Unwind_Resume@plt+0xe9a8>
+   5b300:	48 8b 74 24 08       	mov    rsi,QWORD PTR [rsp+0x8]
+   5b305:	48 85 f6             	test   rsi,rsi
+   5b308:	0f 84 a0 f9 ff ff    	je     5acae <__cxa_finalize@plt-0x1036a2>
+   5b30e:	ba 01 00 00 00       	mov    edx,0x1
+   5b313:	4c 89 ff             	mov    rdi,r15
+   5b316:	ff 15 ec 19 11 00    	call   QWORD PTR [rip+0x1119ec]        # 16cd08 <_Unwind_Resume@plt+0xe9a8>
+   5b31c:	e9 8d f9 ff ff       	jmp    5acae <__cxa_finalize@plt-0x1036a2>
+   5b321:	48 8d 3d a0 46 11 00 	lea    rdi,[rip+0x1146a0]        # 16f9c8 <_Unwind_Resume@plt+0x11668>
+   5b328:	ff 15 4a 1b 11 00    	call   QWORD PTR [rip+0x111b4a]        # 16ce78 <_Unwind_Resume@plt+0xeb18>
+   5b32e:	84 c0                	test   al,al
+   5b330:	0f 85 a7 fd ff ff    	jne    5b0dd <__cxa_finalize@plt-0x103273>
+   5b336:	e9 20 ff ff ff       	jmp    5b25b <__cxa_finalize@plt-0x1030f5>
+   5b33b:	bf 01 00 00 00       	mov    edi,0x1
+   5b340:	be 1b 00 00 00       	mov    esi,0x1b
+   5b345:	ff 15 ed 1a 11 00    	call   QWORD PTR [rip+0x111aed]        # 16ce38 <_Unwind_Resume@plt+0xead8>
+   5b34b:	cc                   	int3
+   5b34c:	cc                   	int3
+   5b34d:	cc                   	int3
+   5b34e:	cc                   	int3
+   5b34f:	cc                   	int3
+   5b350:	53                   	push   rbx
+   5b351:	48 83 ec 10          	sub    rsp,0x10
+   5b355:	48 8b 05 2c 1b 11 00 	mov    rax,QWORD PTR [rip+0x111b2c]        # 16ce88 <_Unwind_Resume@plt+0xeb28>
+   5b35c:	48 8b 00             	mov    rax,QWORD PTR [rax]
+   5b35f:	48 d1 e0             	shl    rax,1
+   5b362:	48 85 c0             	test   rax,rax
+   5b365:	0f 85 95 00 00 00    	jne    5b400 <__cxa_finalize@plt-0x102f50>
+   5b36b:	48 8b 17             	mov    rdx,QWORD PTR [rdi]
+   5b36e:	48 8b 42 18          	mov    rax,QWORD PTR [rdx+0x18]
+   5b372:	48 89 c7             	mov    rdi,rax
+   5b375:	48 c1 ef 20          	shr    rdi,0x20
+   5b379:	89 3c 24             	mov    DWORD PTR [rsp],edi
+   5b37c:	39 42 20             	cmp    DWORD PTR [rdx+0x20],eax
+   5b37f:	74 5d                	je     5b3de <__cxa_finalize@plt-0x102f72>
+   5b381:	48 be 00 00 00 00 ff 	movabs rsi,0xffffffff00000000
+   5b388:	ff ff ff 
+   5b38b:	48 89 c1             	mov    rcx,rax
+   5b38e:	66 90                	xchg   ax,ax
+   5b390:	44 8d 40 01          	lea    r8d,[rax+0x1]
+   5b394:	44 89 44 24 04       	mov    DWORD PTR [rsp+0x4],r8d
+   5b399:	39 c7                	cmp    edi,eax
+   5b39b:	75 13                	jne    5b3b0 <__cxa_finalize@plt-0x102fa0>
+   5b39d:	44 89 c0             	mov    eax,r8d
+   5b3a0:	48 89 c7             	mov    rdi,rax
+   5b3a3:	48 c1 e7 20          	shl    rdi,0x20
+   5b3a7:	eb 15                	jmp    5b3be <__cxa_finalize@plt-0x102f92>
+   5b3a9:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+   5b3b0:	41 39 f8             	cmp    r8d,edi
+   5b3b3:	74 2f                	je     5b3e4 <__cxa_finalize@plt-0x102f6c>
+   5b3b5:	44 89 c0             	mov    eax,r8d
+   5b3b8:	48 89 cf             	mov    rdi,rcx
+   5b3bb:	48 21 f7             	and    rdi,rsi
+   5b3be:	48 09 c7             	or     rdi,rax
+   5b3c1:	48 89 c8             	mov    rax,rcx
+   5b3c4:	f0 48 0f b1 7a 18    	lock cmpxchg QWORD PTR [rdx+0x18],rdi
+   5b3ca:	74 4a                	je     5b416 <__cxa_finalize@plt-0x102f3a>
+   5b3cc:	48 89 c7             	mov    rdi,rax
+   5b3cf:	48 c1 ef 20          	shr    rdi,0x20
+   5b3d3:	89 3c 24             	mov    DWORD PTR [rsp],edi
+   5b3d6:	48 89 c1             	mov    rcx,rax
+   5b3d9:	39 42 20             	cmp    DWORD PTR [rdx+0x20],eax
+   5b3dc:	75 b2                	jne    5b390 <__cxa_finalize@plt-0x102fc0>
+   5b3de:	48 83 c4 10          	add    rsp,0x10
+   5b3e2:	5b                   	pop    rbx
+   5b3e3:	c3                   	ret
+   5b3e4:	4c 8d 0d b5 41 10 00 	lea    r9,[rip+0x1041b5]        # 15f5a0 <_Unwind_Resume@plt+0x1240>
+   5b3eb:	48 89 e6             	mov    rsi,rsp
+   5b3ee:	48 8d 54 24 04       	lea    rdx,[rsp+0x4]
+   5b3f3:	bf 01 00 00 00       	mov    edi,0x1
+   5b3f8:	31 c9                	xor    ecx,ecx
+   5b3fa:	ff 15 10 1b 11 00    	call   QWORD PTR [rip+0x111b10]        # 16cf10 <_Unwind_Resume@plt+0xebb0>
